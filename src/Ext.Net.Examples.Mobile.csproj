@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15B7398E-6E78-4509-9303-057E8D58F47C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ext.Net.Examples.Mobile</RootNamespace>
+    <AssemblyName>Ext.Net.Examples.Mobile</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Development|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '10.0'">
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '11.0' Or '$(VisualStudioVersion)' == '12.0' Or '$(VisualStudioVersion)' == '14.0'">
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Release|AnyCPU') Or ('$(Configuration)|$(Platform)' == 'Debug|AnyCPU')">
+    <Reference Include="Ext.Net.Mobile, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ext.NET.Mobile.4.1.0\lib\net45\Ext.Net.Mobile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ext.NET.Utilities.2.5.0\lib\Ext.Net.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="Transformer.NET, Version=2.1.1.22883, Culture=neutral, PublicKeyToken=e274d618e7c603a7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Transformer.NET.2.1.1\lib\net35\Transformer.NET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Development|AnyCPU') ">
+    <Reference Include="Ext.Net.Mobile, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+      <HintPath>..\..\Mobile\src\bin\Debug\Ext.Net.Mobile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
+      <HintPath>..\..\Mobile\src\bin\Debug\Ext.Net.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Mobile\src\bin\Debug\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\Mobile\src\bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mobile\src\bin\Debug\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mobile\src\bin\Debug\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Mobile\src\bin\Debug\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="Transformer.NET, Version=2.1.1.22883, Culture=neutral, PublicKeyToken=e274d618e7c603a7, processorArchitecture=MSIL">
+      <HintPath>..\..\Mobile\src\bin\Debug\Transformer.NET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Examples\animation\cover\CoverDown.ascx" />
+    <Content Include="Examples\animation\cover\CoverLeft.ascx" />
+    <Content Include="Examples\animation\cover\CoverRight.ascx" />
+    <Content Include="Examples\animation\cover\CoverUp.ascx" />
+    <Content Include="Examples\animation\Fade.ascx" />
+    <Content Include="Examples\animation\Flip.ascx" />
+    <Content Include="Examples\animation\Pop.ascx" />
+    <Content Include="Examples\animation\reveal\RevealDown.ascx" />
+    <Content Include="Examples\animation\reveal\RevealLeft.ascx" />
+    <Content Include="Examples\animation\reveal\RevealRight.ascx" />
+    <Content Include="Examples\animation\reveal\RevealUp.ascx" />
+    <Content Include="Examples\animation\slide\LoremIpsum2.ascx" />
+    <Content Include="Examples\animation\slide\SlideDown.ascx" />
+    <Content Include="Examples\animation\slide\SlideLeft.ascx" />
+    <Content Include="Examples\animation\slide\SlideRight.ascx" />
+    <Content Include="Examples\animation\slide\SlideUp.ascx" />
+    <Content Include="Examples\binding\Association.ascx" />
+    <Content Include="Examples\binding\ChainedSelect.ascx" />
+    <Content Include="Examples\binding\ChainedStore.ascx" />
+    <Content Include="Examples\binding\ComponentState.ascx" />
+    <Content Include="Examples\binding\Form.ascx" />
+    <Content Include="Examples\binding\Formula.ascx" />
+    <Content Include="Examples\binding\Selection.ascx" />
+    <Content Include="Examples\binding\Simple.ascx" />
+    <Content Include="Examples\binding\TwoWay.ascx" />
+    <Content Include="Examples\binding\TwoWayFormula.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Examples\graphics\cartesian-charts\Area.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\Bar.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\Bubble.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\Candlestick.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\Column.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\Column3D.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\ColumnStacked.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\ColumnWithRenderer.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\Line.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\LineWithMarker.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\LineWithRenderer.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\OHLC.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\Plot.ascx" />
+    <Content Include="Examples\graphics\cartesian-charts\Scatter.ascx" />
+    <Content Include="Examples\graphics\draw\FreeDraw.ascx" />
+    <Content Include="Examples\graphics\draw\VectorIcons.ascx" />
+    <Content Include="Examples\graphics\polar-charts\Gauge.ascx" />
+    <Content Include="Examples\graphics\polar-charts\Pie.ascx" />
+    <Content Include="Examples\graphics\polar-charts\Pie3D.ascx" />
+    <Content Include="Examples\graphics\polar-charts\Radar.ascx" />
+    <Content Include="Examples\media\Audio.ascx" />
+    <Content Include="Examples\media\Video.ascx" />
+    <Content Include="Examples\user-interface\Bottomtabs.ascx" />
+    <Content Include="Examples\user-interface\Buttons.ascx" />
+    <Content Include="Examples\user-interface\Carousel.ascx" />
+    <Content Include="Examples\user-interface\dataviews\Basic.ascx" />
+    <Content Include="Examples\user-interface\dataviews\Horizontal.ascx" />
+    <Content Include="Examples\user-interface\dataviews\Inline.ascx" />
+    <Content Include="Examples\user-interface\forms\FormPanel.ascx" />
+    <Content Include="Examples\user-interface\forms\PlaceHolderLabel.ascx" />
+    <Content Include="Examples\user-interface\forms\Sliders.ascx" />
+    <Content Include="Examples\user-interface\forms\ToolbarInput.ascx" />
+    <Content Include="Examples\user-interface\Icons.ascx" />
+    <Content Include="Examples\user-interface\lists\Basic.ascx" />
+    <Content Include="Examples\user-interface\lists\Disclosure.ascx" />
+    <Content Include="Examples\user-interface\lists\Grouped.ascx" />
+    <Content Include="Examples\user-interface\Menus.ascx" />
+    <Content Include="Examples\user-interface\nestedlists\Basic.ascx" />
+    <Content Include="Examples\user-interface\nestedlists\DetailContainer.ascx" />
+    <Content Include="Examples\user-interface\Overlays.ascx" />
+    <Content Include="Examples\user-interface\Tabs.ascx" />
+    <Content Include="Examples\user-interface\Toolbars.ascx" />
+    <Content Include="Examples\user-interface\TreeList.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="resources\audio\crash.mp3" />
+    <Content Include="resources\css\KitchenSink-all.css" />
+    <Content Include="resources\css\treelist.css" />
+    <Content Include="resources\images\bigbuckvideo_cover.jpg" />
+    <Content Include="resources\images\glyphicons_094_vector_path_square.png" />
+    <Content Include="resources\images\glyphicons_095_vector_path_circle.png" />
+    <Content Include="resources\images\glyphicons_096_vector_path_polygon.png" />
+    <Content Include="resources\js\classes\SourceOverlay.js" />
+    <Content Include="resources\js\classes\StoreDemos.js" />
+    <Content Include="resources\js\controller\Main.js" />
+    <Content Include="resources\js\controller\phone\Main.js" />
+    <Content Include="resources\js\examples\columnchart.js" />
+    <Content Include="resources\js\examples\freedrawcomponent.js" />
+    <Content Include="resources\js\examples\treelist.js" />
+    <Content Include="resources\js\examples\vectoricons.js" />
+    <Content Include="resources\js\main.js" />
+    <Content Include="resources\video\BigBuck.m4v" />
+    <Content Include="StandaloneExamples\DataView_Basic.aspx" />
+    <Content Include="StandaloneExamples\DataView_Events.aspx" />
+    <Content Include="StandaloneExamples\DataView_Methods.aspx" />
+    <Content Include="StandaloneExamples\Default.aspx" />
+    <Content Include="StandaloneExamples\DirectEvents.aspx" />
+    <Content Include="StandaloneExamples\Viewport_Basic.aspx" />
+    <Content Include="StandaloneExamples\Viewport_Form.aspx" />
+    <Content Include="StandaloneExamples\Viewport_Menus_1.aspx" />
+    <Content Include="StandaloneExamples\Viewport_Menus_2.aspx" />
+    <Content Include="StandaloneExamples\Viewport_Menus_3.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Examples\graphics\data\Bubble.ashx" />
+    <Content Include="Examples\graphics\data\Climate.ashx" />
+    <Content Include="Examples\graphics\data\OrderItems.ashx" />
+    <Content Include="Examples\graphics\data\Pie.ashx" />
+    <Content Include="Examples\graphics\data\Plot.ashx" />
+    <Content Include="Examples\graphics\data\StockPrice.ashx" />
+    <Content Include="Examples\graphics\data\usd2eur.json" />
+    <Content Include="resources\feed.json" />
+    <Content Include="resources\video\BigBuck.webm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\GetFeeds.cs" />
+    <Compile Include="Class\KitchenSink\GetPeople.cs" />
+    <Compile Include="Examples\graphics\data\Bubble.ashx.cs">
+      <DependentUpon>Bubble.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\graphics\data\Climate.ashx.cs">
+      <DependentUpon>Climate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\graphics\data\OrderItems.ashx.cs">
+      <DependentUpon>OrderItems.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\graphics\data\Pie.ashx.cs">
+      <DependentUpon>Pie.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\graphics\data\Plot.ashx.cs">
+      <DependentUpon>Plot.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Examples\graphics\data\StockPrice.ashx.cs">
+      <DependentUpon>StockPrice.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ExtNetMobileModel.cs" />
+    <Compile Include="Models\KitchenSink\Countries.cs" />
+    <Compile Include="Models\KitchenSink\Person.cs" />
+    <Compile Include="Models\KitchenSink\Speaker.cs" />
+    <Compile Include="Models\KitchenSink\States.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55276</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55276/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
