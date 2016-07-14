@@ -39,7 +39,7 @@
     runat="server"
     Cls="card">
     <Listeners>
-        <Hide Handler="this.down('audio').fireEvent('hide'); this.down('button').setText('Play audio');" />
+        <Hide Handler="this.down('audio').fireEvent('hide'); if (this.down('button')) this.down('button').setText('Play audio');" />
         <Show Handler="this.down('audio').fireEvent('show');" />
     </Listeners>
     <Items>
