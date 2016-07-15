@@ -93,6 +93,11 @@
         // }
 
         v = v.replace(/</g, '&lt;');
+
+        if (Ext.net.StringUtils.startsWith(v, '&lt;')) {
+            v = v.replace('&lt;', '<');
+        }
+
         //v = v.replace(/>/g, '&gt;');
 
         // Block comments
