@@ -142,7 +142,8 @@ Ext.define('KitchenSink.controller.Main', {
                     me.setOverlayContent(overlay, values);
                     overlay.unmask();
 
-                    view.self.prototype.$cachedContent = values;
+                    //view.self.prototype.$cachedContent = values;
+                    view.$cachedContent = values;
                 });
             }
         }
