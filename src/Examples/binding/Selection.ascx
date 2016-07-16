@@ -2,12 +2,17 @@
 
 <%@ Import Namespace="Ext.Net.Mobile.Examples.Class.KitchenSink" %>
 
-<ext:Container runat="server">
-    <CustomConfig>
-        <ext:ConfigItem Name="viewModel"
-            Value="{ stores: { people: App.Store1 } }"
-            Mode="Raw" />
-    </CustomConfig>
+<script runat="server">
+    public static object Model = new
+    {
+        stores = new
+        {
+            people = new JRawValue("App.Store1")
+        }
+    };
+</script>
+
+<ext:Container runat="server" ViewModel="<%# Model %>" AutoDataBind="true">
     <LayoutConfig>
         <ext:HBoxLayoutConfig Align="Stretch" />
     </LayoutConfig>

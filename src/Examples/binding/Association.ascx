@@ -2,12 +2,18 @@
 
 <%@ Import Namespace="Ext.Net.Mobile.Examples.Class.KitchenSink" %>
 
-<ext:Container runat="server">
-    <CustomConfig>
-        <ext:ConfigItem Name="viewModel"
-            Value="{ formulas: { person: function(get) { return get('peopleList.selection'); } }, stores: { people: App.Store1 } }"
-            Mode="Raw" />
-    </CustomConfig>
+<script runat="server">
+    public static object Model = new
+    {
+        formulas = new
+        {
+            person = new JFunction("return get('peopleList.selection');", "get")
+        },
+        stores = new { people = new JRawValue("App.Store1") }
+    };
+</script>
+
+<ext:Container runat="server" ViewModel="<%# Model %>" AutoDataBind="true">
     <LayoutConfig>
         <ext:VBoxLayoutConfig Align="Stretch" />
     </LayoutConfig>

@@ -1,11 +1,23 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:FormPanel runat="server">
-    <CustomConfig>
-        <ext:ConfigItem Name="viewModel"
-            Value="{ formulas: { quad: function(get) { return get('twice') * 2; }, twice: { get: function (get) { return get('x') * 2; } } }, data: { x: 1 } }"
-            Mode="Raw" />
-    </CustomConfig>
+<script runat="server">
+    public class FormulaViewModel
+    {
+        public static object Model = new
+        {
+            formulas = new
+            {
+                quad = new JFunction("return get('twice') * 2;", "get"),
+                twice = new { get = new JFunction("return get('x') * 2;", "get") }
+            },
+            data = new
+            {
+                x = 1
+            }
+        };
+    }
+</script>
+<ext:FormPanel runat="server" ViewModel="<%# FormulaViewModel.Model %>" AutoDataBind="true">
     <Items>
         <ext:FieldSet runat="server"
             Instructions="As the field changes, the formula calculates the 2x and 4x values.">

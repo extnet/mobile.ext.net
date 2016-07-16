@@ -1,9 +1,10 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:FormPanel runat="server">
-    <CustomConfig>
-        <ext:ConfigItem Name="viewModel" Value="true" Mode="Raw" />
-    </CustomConfig>
+<script runat="server">
+    public static bool CSViewModel = true;
+</script>
+
+<ext:FormPanel runat="server" ViewModel="<%# CSViewModel %>" AutoDataBind="true">
     <Items>
         <ext:FieldSet runat="server"
             Instructions="The admin key field is disabled when the admin checkbox is not checked. The high priority field is hidden when the priority is toggled.">

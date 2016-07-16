@@ -1,11 +1,18 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:FormPanel runat="server" Layout="VBoxLayout" Scrollable="Both">
-    <CustomConfig>
-        <ext:ConfigItem Name="viewModel"
-            Value="{ data: { red: 255, green: 100, blue: 150 } }"
-            Mode="Raw" />
-    </CustomConfig>
+<script runat="server">
+    public static object Model = new
+    {
+        data = new
+        {
+            red = 255,
+            green = 100,
+            blue = 150
+        }
+    };
+</script>
+
+<ext:FormPanel runat="server" Layout="VBoxLayout" Scrollable="Both" ViewModel="<%# Model %>" AutoDataBind="true">
     <Items>
         <ext:FieldSet runat="server" Flex="1" MinHeight="400" Layout="VBoxLayout"
             Instructions="'The style of the color block is controlled by either the numeric field or the slider. Both the numeric fields and the slider are bound to the same value in the View Model.">

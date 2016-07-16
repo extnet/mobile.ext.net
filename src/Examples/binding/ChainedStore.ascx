@@ -2,14 +2,38 @@
 
 <%@ Import Namespace="Ext.Net.Mobile.Examples.Class.KitchenSink" %>
 
-<ext:Container runat="server" Scrollable="Both">
-    <CustomConfig>
-        <%-- This 'referenceHolder' seems to be unused and does not change the example at all if removed. --%>
-        <%--<ext:ConfigItem Name="referenceHolder" Value="true" Mode="Raw" />--%>
-        <ext:ConfigItem Name="viewModel"
-            Value="{ stores: { everyone: App.Store1, ageFiltered: { source: '{everyone}', filters: [{ property: 'Age', value: '{minimumAge}', operator: '>=' }], sorters: [{ property: 'Age', direction: 'ASC' }] } }, data: { minimumAge: 18 } }"
-            Mode="Raw" />
-    </CustomConfig>
+<script runat="server">
+    public static object Model = new
+    {
+        stores = new
+        {
+            everyone = new JRawValue("App.Store1"),
+            ageFiltered = new
+            {
+                source = "{everyone}",
+                filters = new[]
+                {
+                    new
+                    {
+                        property = "Age",
+                        value = "{minimumAge}",
+                        @operator = ">="
+                    }
+                },
+                sorters = new[] 
+                {
+                    new
+                    {
+                        property = "Age",
+                        direction = "ASC"
+                    }
+                }
+            }
+        },
+        data = new { minimumAge = 18 }
+    };
+</script>
+<ext:Container runat="server" Scrollable="Both" ViewModel="<%# Model %>" AutoDataBind="true">
     <LayoutConfig>
         <ext:VBoxLayoutConfig Align="Stretch" />
     </LayoutConfig>
