@@ -1,16 +1,23 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:FormPanel runat="server" ID="FormPanel1">
-    <PreInit Handler="this.makeRandomTitle = function () { this.getViewModel().set('title', 'Title ' + Ext.Number.randomInt(0, 1000)); }" />
-    <CustomConfig>
-        <ext:ConfigItem Name="viewModel"
-            Value="{ data: { title: 'Default Title' } }"
-            Mode="Raw" />
-    </CustomConfig>
+<script runat="server">
+    public class TwoWayViewModel
+    {
+        public static object Model = new
+        {
+            data = new
+            {
+                title = "Default Title"
+            }
+        };
+    }
+</script>
+
+<ext:FormPanel runat="server" ID="FormPanel1" ViewModel="<%# TwoWayViewModel.Model %>" AutoDataBind="true">
     <Items>
         <ext:TitleBar runat="server" Docked="Top" BindString="{title}">
             <Items>
-                <ext:Button runat="server" Text="Random Title" Handler="this.up('formpanel').makeRandomTitle();" />
+                <ext:Button runat="server" Text="Random Title" Handler="makeRandomTitle();" />
             </Items>
         </ext:TitleBar>
         <ext:FieldSet runat="server"
@@ -20,4 +27,11 @@
             </Items>
         </ext:FieldSet>
     </Items>
+    <HtmlBin>
+        <script type="text/javascript">
+            var makeRandomTitle = function (viewModel) {
+                App.FormPanel1.getViewModel().set('title', 'Title ' + Ext.Number.randomInt(0, 1000));
+            }
+        </script>
+    </HtmlBin>
 </ext:FormPanel>
