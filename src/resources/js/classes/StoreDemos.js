@@ -356,6 +356,19 @@ Ext.define('KitchenSink.store.Demos', {
                     leaf: true
                 }]
             }, {
+                text: 'Events',
+                id: 'events',
+                items: [{
+                    text: 'DirectEvents',
+                    id: 'directevents',
+                    items: [{
+                        text: 'Basic',
+                        id: 'directeventsbasic',
+                        view: 'events.directevents.Basic',
+                        leaf: true
+                    }]
+                }]
+            }, {
                 text: 'Touch Events',
                 id: 'touchevents',
                 view: 'touchevents.TouchEvents',
