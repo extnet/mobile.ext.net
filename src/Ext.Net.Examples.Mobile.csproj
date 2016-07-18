@@ -186,6 +186,7 @@
     <Content Include="Examples\binding\TwoWay.ascx" />
     <Content Include="Examples\binding\TwoWayFormula.ascx" />
     <Content Include="Default.aspx" />
+    <Content Include="Examples\events\directevents\DurationMessages.ascx" />
     <Content Include="Examples\events\directevents\Basic.ascx" />
     <Content Include="Examples\graphics\cartesian-charts\Area.ascx" />
     <Content Include="Examples\graphics\cartesian-charts\Bar.ascx" />
@@ -274,6 +275,9 @@
   <ItemGroup>
     <Compile Include="Class\GetFeeds.cs" />
     <Compile Include="Class\KitchenSink\GetPeople.cs" />
+    <Compile Include="Data\DurationMessages.ashx.cs">
+      <DependentUpon>DurationMessages.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Data\GetServerTime.ashx.cs">
       <DependentUpon>GetServerTime.ashx</DependentUpon>
     </Compile>
@@ -305,7 +309,9 @@
     <Compile Include="Models\KitchenSink\States.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Data\DurationMessages.ashx" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Data\GetServerTime.ashx" />
   </ItemGroup>

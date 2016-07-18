@@ -375,6 +375,15 @@ Ext.define('KitchenSink.store.Demos', {
                             type: 'GetServerTime.ashx.cs',
                             path: 'Data/GetServerTime.ashx.cs'
                         }]
+                    }, {
+                        text: 'Duration Messages',
+                        id: 'durationmessages',
+                        view: 'events.directevents.DurationMessages',
+                        leaf: true,
+                        otherContent: [{
+                            type: 'DurationMessages.ashx.cs',
+                            path: 'Data/DurationMessages.ashx.cs'
+                        }]
                     }]
                 }]
             }, {
