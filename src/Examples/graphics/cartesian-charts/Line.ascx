@@ -80,10 +80,4 @@
                                 toolbar.add(interaction.getUndoButton());
                              }" />
     </Listeners>
-    <CustomConfig>
-        <ext:ConfigItem Name="otherContent">
-            <ext:Parameter Name="type" Value="Data" Mode="Value" />
-            <ext:Parameter Name="path" Value="Examples/graphics/data/usd2eur.json" Mode="Value" />
-        </ext:ConfigItem>
-    </CustomConfig>
 </ext:Panel>

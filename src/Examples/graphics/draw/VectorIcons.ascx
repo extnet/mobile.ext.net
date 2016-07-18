@@ -18,10 +18,4 @@
     <ResourceItems>
         <ext:ClientResourceItem Path="resources/js/examples/vectoricons.js" />
     </ResourceItems>
-    <CustomConfig>
-        <ext:ConfigItem Name="otherContent">
-            <ext:Parameter Name="type" Value="JavaScript" Mode="Value" />
-            <ext:Parameter Name="path" Value="resources/js/examples/vectoricons.js" Mode="Value" />
-        </ext:ConfigItem>
-    </CustomConfig>
 </ext:Panel>

@@ -15,7 +15,8 @@ Ext.define('KitchenSink.model.Demo', {
         { name: 'animation', type: 'auto' },
         { name: 'limit', type: 'auto' },
         { name: 'preventHide', type: 'boolean' },
-        { name: 'view', type: 'string' }
+        { name: 'view', type: 'string' },
+        { name: 'otherContent' }
     ]
 });
 
@@ -38,7 +39,11 @@ Ext.define('KitchenSink.store.Demos', {
                     text: 'Tree',
                     leaf: true,
                     view: 'user-interface.TreeList',
-                    id: 'tree-list'
+                    id: 'tree-list',
+                    otherContent: [{
+                        type: 'JavaScript',
+                        path: 'resources/js/examples/treelist.js'
+                    }]
                 }, {
                     text: 'Buttons',
                     leaf: true,
@@ -365,7 +370,11 @@ Ext.define('KitchenSink.store.Demos', {
                         text: 'Basic',
                         id: 'directeventsbasic',
                         view: 'events.directevents.Basic',
-                        leaf: true
+                        leaf: true,
+                        otherContent: [{
+                            type: 'GetServerTime.ashx.cs',
+                            path: 'Data/GetServerTime.ashx.cs'
+                        }]
                     }]
                 }]
             }, {
@@ -489,85 +498,144 @@ Ext.define('KitchenSink.store.Demos', {
                         view: 'graphics.cartesian-charts.Column',
                         leaf: true,
                         id: 'chart-column',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'JavaScript',
+                            path: 'resources/js/examples/columnchart.js'
+                        }, {
+                            type: 'Climate.ashx.cs',
+                            path: 'Examples/graphics/data/Climate.ashx.cs'
+                        }]
                     }, {
                         text: 'Area Chart',
                         view: 'graphics.cartesian-charts.Area',
                         leaf: true,
                         id: 'chart-area',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'OrderItems.ashx.cs',
+                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                        }]
                     }, {
                         text: 'Line Chart (zoomable)',
                         view: 'graphics.cartesian-charts.Line',
                         leaf: true,
                         id: 'chart-line',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Data',
+                            path: 'Examples/graphics/data/usd2eur.json'
+                        }]
                     }, {
                         text: 'Line Chart (with icons)',
                         view: 'graphics.cartesian-charts.LineWithMarker',
                         leaf: true,
                         id: 'chart-linewithmarker',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Pie.ashx.cs',
+                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                        }]
                     }, {
                         text: 'Line Chart (with renderer)',
                         view: 'graphics.cartesian-charts.LineWithRenderer',
                         leaf: true,
                         id: 'chart-linewithrenderer',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Pie.ashx.cs',
+                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                        }]
                     }, {
                         text: 'Column Chart (with renderer)',
                         view: 'graphics.cartesian-charts.ColumnWithRenderer',
                         leaf: true,
                         id: 'chart-columnwithrenderer',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Pie.ashx.cs',
+                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                        }]
                     }, {
                         text: 'Bar Chart',
                         view: 'graphics.cartesian-charts.Bar',
                         leaf: true,
                         id: 'chart-bar',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Pie.ashx.cs',
+                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                        }]
                     }, {
                         text: 'Column Chart (stacked)',
                         view: 'graphics.cartesian-charts.ColumnStacked',
                         leaf: true,
                         id: 'chart-columnstacked',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'OrderItems.ashx.cs',
+                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                        }]
                     }, {
                         text: 'Column Chart (3D)',
                         view: 'graphics.cartesian-charts.Column3D',
                         leaf: true,
                         id: 'chart-column3d',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'OrderItems.ashx.cs',
+                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                        }]
                     }, {
                         text: 'Scatter Chart',
                         view: 'graphics.cartesian-charts.Scatter',
                         leaf: true,
                         id: 'chart-scatter',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'OrderItems.ashx.cs',
+                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                        }]
                     }, {
                         text: 'Candlestick Chart',
                         view: 'graphics.cartesian-charts.Candlestick',
                         leaf: true,
                         id: 'chart-candlestick',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'StockPrice.ashx.cs',
+                            path: 'Examples/graphics/data/StockPrice.ashx.cs'
+                        }]
                     }, {
                         text: 'OHLC Chart',
                         view: 'graphics.cartesian-charts.OHLC',
                         leaf: true,
                         id: 'chart-ohlc',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'StockPrice.ashx.cs',
+                            path: 'Examples/graphics/data/StockPrice.ashx.cs'
+                        }]
                     }, {
                         text: 'Plot Chart',
                         view: 'graphics.cartesian-charts.Plot',
                         leaf: true,
                         id: 'chart-plot',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Plot.ashx.cs',
+                            path: 'Examples/graphics/data/Plot.ashx.cs'
+                        }]
                     }, {
                         text: 'Bubble Chart',
                         view: 'graphics.cartesian-charts.Bubble',
                         leaf: true,
                         id: 'chart-bubble',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Bubble.ashx.cs',
+                            path: 'Examples/graphics/data/Bubble.ashx.cs'
+                        }]
                     }]
                 }, {
                     text: 'Polar Charts',
@@ -577,25 +645,41 @@ Ext.define('KitchenSink.store.Demos', {
                         view: 'graphics.polar-charts.Pie',
                         leaf: true,
                         id: 'chart-pie',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Pie.ashx.cs',
+                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                        }]
                     }, {
                         text: 'Pie Chart (3D)',
                         view: 'graphics.polar-charts.Pie3D',
                         leaf: true,
                         id: 'chart-pie3d',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Pie.ashx.cs',
+                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                        }]
                     }, {
                         text: 'Radar Chart',
                         view: 'graphics.polar-charts.Radar',
                         leaf: true,
                         id: 'chart-radar',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'OrderItems.ashx.cs',
+                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                        }]
                     }, {
                         text: 'Gauge Chart',
                         view: 'graphics.polar-charts.Gauge',
                         leaf: true,
                         id: 'chart-gauge',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'Pie.ashx.cs',
+                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                        }]
                     }]
                 }, {
                     text: 'Draw Component',
@@ -605,13 +689,21 @@ Ext.define('KitchenSink.store.Demos', {
                         view: 'graphics.draw.FreeDraw',
                         leaf: true,
                         id: 'FreeDraw',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'JavaScript',
+                            path: 'resources/js/examples/freedrawcomponent.js'
+                        }]
                     }, {
                         text: 'Vector Icons',
                         view: 'graphics.draw.VectorIcons',
                         leaf: true,
                         id: 'VectorIcons',
-                        limit: 1
+                        limit: 1,
+                        otherContent: [{
+                            type: 'JavaScript',
+                            path: 'resources/js/examples/vectoricons.js'
+                        }]
                     }]
                 }]
             }/*, {

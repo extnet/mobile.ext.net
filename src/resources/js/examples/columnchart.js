@@ -72,13 +72,5 @@
         });
     },
 
-    itemAnimationDuration: 0,
-
-    otherContent: [{
-        type: 'JavaScript',
-        path: 'resources/js/examples/columnchart.js'
-    }, {
-        type: 'Climate.ashx.cs',
-        path: 'Examples/graphics/data/Climate.ashx.cs'
-    }]
+    itemAnimationDuration: 0
 }

@@ -95,7 +95,4 @@
             </Listeners>
         </ext:CartesianChart>
     </Items>
-    <CustomConfig>
-        <ext:ConfigItem Name="otherContent" Value="App.ColumnChart.otherContent" Mode="Raw" />
-    </CustomConfig>
 </ext:Container>

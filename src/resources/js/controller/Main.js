@@ -93,7 +93,6 @@ Ext.define('KitchenSink.controller.Main', {
         var me = this,
             overlay = this.getSourceOverlay(),
             demo = this.getCurrentDemo(),
-            view = this.activeView,
             cls, files, content;
 
         if (demo) {
@@ -103,26 +102,24 @@ Ext.define('KitchenSink.controller.Main', {
 
             overlay.show();
 
-            if (view.$cachedContent) {
-                me.setOverlayContent(overlay, view.$cachedContent);
+            if (demo.$cachedContent) {
+                me.setOverlayContent(overlay, demo.$cachedContent);
             } else {
                 overlay.setMasked({
                     xtype: 'loadmask',
                     message: 'Loading Source'
                 });
 
-                //cls = demo.get('view') || demo.get('text');
                 cls = demo.viewName;
                 cls = cls.substr("KitchenSink.view.".length);
                 cls = cls.replace(/\./g, '/');
 
                 files = [this.getFileContent({
                     type: 'Markup',
-                    //path: 'modern/src/view/' + cls + '.js'
                     path: "Examples/" + cls + '.ascx'
                 })];
 
-                content = view.otherContent;
+                content = this.getNav().getLastNode().data.otherContent;
 
                 if (content) {
                     if (!Ext.isArray(content)) {
@@ -139,11 +136,11 @@ Ext.define('KitchenSink.controller.Main', {
                         item.title = item.type;
                         delete item.type;
                     });
+
                     me.setOverlayContent(overlay, values);
                     overlay.unmask();
-
-                    //view.self.prototype.$cachedContent = values;
-                    view.$cachedContent = values;
+                    
+                    demo.$cachedContent = values;
                 });
             }
         }

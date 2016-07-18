@@ -84,11 +84,5 @@
             Height="50"
             Html="No node selected" />
     </Items>
-    <CustomConfig>
-        <ext:ConfigItem Name="otherContent">
-            <ext:Parameter Name="type" Value="JavaScript" Mode="Value" />
-            <ext:Parameter Name="path" Value="resources/js/examples/treelist.js" Mode="Value" />
-        </ext:ConfigItem>
-    </CustomConfig>
 </ext:Panel>
 

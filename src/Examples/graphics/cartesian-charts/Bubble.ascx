@@ -111,10 +111,4 @@
             </Axes>
         </ext:CartesianChart>
     </Items>
-    <CustomConfig>
-        <ext:ConfigItem Name="otherContent">
-            <ext:Parameter Name="type" Value="Bubble.ashx.cs" Mode="Value" />
-            <ext:Parameter Name="path" Value="Examples/graphics/data/Bubble.ashx.cs" Mode="Value" />
-        </ext:ConfigItem>
-    </CustomConfig>
 </ext:Panel>

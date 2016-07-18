@@ -29,10 +29,4 @@
             </DirectEvents>
         </ext:Button>
     </Items>
-    <CustomConfig>
-        <ext:ConfigItem Name="otherContent">
-            <ext:Parameter Name="type" Value="GetServerTime.ashx.cs" Mode="Value" />
-            <ext:Parameter Name="path" Value="Data/GetServerTime.ashx.cs" Mode="Value" />
-        </ext:ConfigItem>
-    </CustomConfig>
 </ext:Container>

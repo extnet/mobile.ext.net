@@ -83,10 +83,4 @@
             </Series>
         </ext:PolarChart>
     </Items>
-    <CustomConfig>
-        <ext:ConfigItem Name="otherContent">
-            <ext:Parameter Name="type" Value="Pie.ashx.cs" Mode="Value" />
-            <ext:Parameter Name="path" Value="Examples/graphics/data/Pie.ashx.cs" Mode="Value" />
-        </ext:ConfigItem>
-    </CustomConfig>
 </ext:Panel>

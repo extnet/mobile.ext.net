@@ -103,10 +103,4 @@
             </Axes>
         </ext:PolarChart>
     </Items>
-    <CustomConfig>
-        <ext:ConfigItem Name="otherContent">
-            <ext:Parameter Name="type" Value="OrderItems.ashx.cs" Mode="Value" />
-            <ext:Parameter Name="path" Value="Examples/graphics/data/OrderItems.ashx.cs" Mode="Value" />
-        </ext:ConfigItem>
-    </CustomConfig>
 </ext:Panel>
