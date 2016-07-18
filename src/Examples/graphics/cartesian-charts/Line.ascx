@@ -5,7 +5,7 @@
 <script runat="server">
     public void BeforeRender()
     {
-        this.LineChart.GetStore().JsonData = System.IO.File.ReadAllText(Server.MapPath("graphics\\data\\usd2eur.json"));
+        this.LineChart.GetStore().JsonData = System.IO.File.ReadAllText(Server.MapPath("resources\\usd2eur.json"));
     }
 </script>
 

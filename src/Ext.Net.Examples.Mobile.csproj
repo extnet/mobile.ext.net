@@ -261,13 +261,13 @@
     <Content Include="StandaloneExamples\Viewport_Menus_3.aspx" />
     <Content Include="Web.config" />
     <Content Include="packages.config" />
-    <Content Include="Examples\graphics\data\Bubble.ashx" />
-    <Content Include="Examples\graphics\data\Climate.ashx" />
-    <Content Include="Examples\graphics\data\OrderItems.ashx" />
-    <Content Include="Examples\graphics\data\Pie.ashx" />
-    <Content Include="Examples\graphics\data\Plot.ashx" />
-    <Content Include="Examples\graphics\data\StockPrice.ashx" />
-    <Content Include="Examples\graphics\data\usd2eur.json" />
+    <Content Include="Data\Bubble.ashx" />
+    <Content Include="Data\Climate.ashx" />
+    <Content Include="Data\OrderItems.ashx" />
+    <Content Include="Data\Pie.ashx" />
+    <Content Include="Data\Plot.ashx" />
+    <Content Include="Data\StockPrice.ashx" />
+    <Content Include="resources\usd2eur.json" />
     <Content Include="resources\feed.json" />
     <Content Include="resources\video\BigBuck.webm" />
   </ItemGroup>
@@ -277,22 +277,22 @@
     <Compile Include="Data\GetServerTime.ashx.cs">
       <DependentUpon>GetServerTime.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Examples\graphics\data\Bubble.ashx.cs">
+    <Compile Include="Data\Bubble.ashx.cs">
       <DependentUpon>Bubble.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Examples\graphics\data\Climate.ashx.cs">
+    <Compile Include="Data\Climate.ashx.cs">
       <DependentUpon>Climate.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Examples\graphics\data\OrderItems.ashx.cs">
+    <Compile Include="Data\OrderItems.ashx.cs">
       <DependentUpon>OrderItems.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Examples\graphics\data\Pie.ashx.cs">
+    <Compile Include="Data\Pie.ashx.cs">
       <DependentUpon>Pie.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Examples\graphics\data\Plot.ashx.cs">
+    <Compile Include="Data\Plot.ashx.cs">
       <DependentUpon>Plot.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Examples\graphics\data\StockPrice.ashx.cs">
+    <Compile Include="Data\StockPrice.ashx.cs">
       <DependentUpon>StockPrice.ashx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">

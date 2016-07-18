@@ -53,7 +53,7 @@
                         <ext:ModelField Name="g3" />
                     </Fields>
                     <ServerProxy>
-                        <ext:AjaxProxy Url="Examples/graphics/data/Bubble.ashx" />
+                        <ext:AjaxProxy Url="Data/Bubble.ashx" />
                     </ServerProxy>
                 </ext:Store>
             </Store>

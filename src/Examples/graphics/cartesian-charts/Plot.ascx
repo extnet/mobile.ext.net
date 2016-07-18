@@ -54,7 +54,7 @@
                         <ext:ModelField Name="y" />
                     </Fields>
                     <ServerProxy>
-                        <ext:AjaxProxy Url="Examples/graphics/data/Plot.ashx" />
+                        <ext:AjaxProxy Url="Data/Plot.ashx" />
                     </ServerProxy>
                     <CustomConfig>
                         <ext:ConfigItem Name="fnIndex" Value="1" Mode="Raw" />

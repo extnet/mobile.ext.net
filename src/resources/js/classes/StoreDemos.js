@@ -504,7 +504,7 @@ Ext.define('KitchenSink.store.Demos', {
                             path: 'resources/js/examples/columnchart.js'
                         }, {
                             type: 'Climate.ashx.cs',
-                            path: 'Examples/graphics/data/Climate.ashx.cs'
+                            path: 'Data/Climate.ashx.cs'
                         }]
                     }, {
                         text: 'Area Chart',
@@ -514,7 +514,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'OrderItems.ashx.cs',
-                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                            path: 'Data/OrderItems.ashx.cs'
                         }]
                     }, {
                         text: 'Line Chart (zoomable)',
@@ -524,7 +524,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Data',
-                            path: 'Examples/graphics/data/usd2eur.json'
+                            path: 'resources/usd2eur.json'
                         }]
                     }, {
                         text: 'Line Chart (with icons)',
@@ -534,7 +534,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Pie.ashx.cs',
-                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                            path: 'Data/Pie.ashx.cs'
                         }]
                     }, {
                         text: 'Line Chart (with renderer)',
@@ -544,7 +544,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Pie.ashx.cs',
-                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                            path: 'Data/Pie.ashx.cs'
                         }]
                     }, {
                         text: 'Column Chart (with renderer)',
@@ -554,7 +554,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Pie.ashx.cs',
-                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                            path: 'Data/Pie.ashx.cs'
                         }]
                     }, {
                         text: 'Bar Chart',
@@ -564,7 +564,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Pie.ashx.cs',
-                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                            path: 'Data/Pie.ashx.cs'
                         }]
                     }, {
                         text: 'Column Chart (stacked)',
@@ -574,7 +574,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'OrderItems.ashx.cs',
-                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                            path: 'Data/OrderItems.ashx.cs'
                         }]
                     }, {
                         text: 'Column Chart (3D)',
@@ -584,7 +584,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'OrderItems.ashx.cs',
-                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                            path: 'Data/OrderItems.ashx.cs'
                         }]
                     }, {
                         text: 'Scatter Chart',
@@ -594,7 +594,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'OrderItems.ashx.cs',
-                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                            path: 'Data/OrderItems.ashx.cs'
                         }]
                     }, {
                         text: 'Candlestick Chart',
@@ -604,7 +604,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'StockPrice.ashx.cs',
-                            path: 'Examples/graphics/data/StockPrice.ashx.cs'
+                            path: 'Data/StockPrice.ashx.cs'
                         }]
                     }, {
                         text: 'OHLC Chart',
@@ -614,7 +614,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'StockPrice.ashx.cs',
-                            path: 'Examples/graphics/data/StockPrice.ashx.cs'
+                            path: 'Data/StockPrice.ashx.cs'
                         }]
                     }, {
                         text: 'Plot Chart',
@@ -624,7 +624,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Plot.ashx.cs',
-                            path: 'Examples/graphics/data/Plot.ashx.cs'
+                            path: 'Data/Plot.ashx.cs'
                         }]
                     }, {
                         text: 'Bubble Chart',
@@ -634,7 +634,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Bubble.ashx.cs',
-                            path: 'Examples/graphics/data/Bubble.ashx.cs'
+                            path: 'Data/Bubble.ashx.cs'
                         }]
                     }]
                 }, {
@@ -648,7 +648,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Pie.ashx.cs',
-                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                            path: 'Data/Pie.ashx.cs'
                         }]
                     }, {
                         text: 'Pie Chart (3D)',
@@ -658,7 +658,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Pie.ashx.cs',
-                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                            path: 'Data/Pie.ashx.cs'
                         }]
                     }, {
                         text: 'Radar Chart',
@@ -668,7 +668,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'OrderItems.ashx.cs',
-                            path: 'Examples/graphics/data/OrderItems.ashx.cs'
+                            path: 'Data/OrderItems.ashx.cs'
                         }]
                     }, {
                         text: 'Gauge Chart',
@@ -678,7 +678,7 @@ Ext.define('KitchenSink.store.Demos', {
                         limit: 1,
                         otherContent: [{
                             type: 'Pie.ashx.cs',
-                            path: 'Examples/graphics/data/Pie.ashx.cs'
+                            path: 'Data/Pie.ashx.cs'
                         }]
                     }]
                 }, {

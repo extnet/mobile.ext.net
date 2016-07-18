@@ -15,7 +15,7 @@
                 <ext:ModelField Name="name" />
             </Fields>
             <ServerProxy>
-                <ext:AjaxProxy Url="Examples/graphics/data/Pie.ashx" />
+                <ext:AjaxProxy Url="Data/Pie.ashx" />
             </ServerProxy>
         </ext:Store>
     </Bin>

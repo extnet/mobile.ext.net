@@ -84,7 +84,7 @@
                         <ext:ModelField Name="name" />
                     </Fields>
                     <ServerProxy>
-                        <ext:AjaxProxy Url="Examples/graphics/data/OrderItems.ashx" />
+                        <ext:AjaxProxy Url="Data/OrderItems.ashx" />
                     </ServerProxy>
                 </ext:Store>
             </Store>

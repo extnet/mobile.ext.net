@@ -80,7 +80,7 @@
                         <ext:ModelField Name="Close" Type="Float" />
                     </Fields>
                     <ServerProxy>
-                        <ext:AjaxProxy Url="Examples/graphics/data/StockPrice.ashx" />
+                        <ext:AjaxProxy Url="Data/StockPrice.ashx" />
                     </ServerProxy>
                 </ext:Store>
             </Store>

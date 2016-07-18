@@ -43,7 +43,7 @@
                         </ext:ModelField>
                     </Fields>
                     <ServerProxy>
-                        <ext:AjaxProxy Url="Examples/graphics/data/Climate.ashx" />
+                        <ext:AjaxProxy Url="Data/Climate.ashx" />
                     </ServerProxy>
                 </ext:Store>
             </Store>
