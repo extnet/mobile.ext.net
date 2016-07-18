@@ -207,6 +207,7 @@
     <Content Include="Examples\graphics\polar-charts\Radar.ascx" />
     <Content Include="Examples\media\Audio.ascx" />
     <Content Include="Examples\media\Video.ascx" />
+    <Content Include="Examples\touchevents\TouchEvents.ascx" />
     <Content Include="Examples\user-interface\Bottomtabs.ascx" />
     <Content Include="Examples\user-interface\Buttons.ascx" />
     <Content Include="Examples\user-interface\Carousel.ascx" />
