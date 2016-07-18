@@ -24,7 +24,7 @@
         <ext:Button runat="server" Text="Click Me">
             <DirectEvents>
                 <Tap Url="~/Data/GetServerTime.ashx">
-                    <EventMask Message="Loading..." MinDelay="2000" />
+                    <EventMask ShowMask="true" MinDelay="2000" />
                 </Tap>
             </DirectEvents>
         </ext:Button>
