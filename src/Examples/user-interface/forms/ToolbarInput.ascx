@@ -3,7 +3,7 @@
 <ext:Panel 
     runat="server"
     StyleHtmlContent="true"
-    Html="This is a simple example of fields withing toolbars.">
+    Html="This is a simple example of fields within toolbars.">
     <Items>
         <ext:Toolbar runat="server" Docked="Top">
             <Items>
