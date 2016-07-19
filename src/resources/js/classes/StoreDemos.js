@@ -494,28 +494,30 @@ Ext.define('KitchenSink.store.Demos', {
                 id: 'touchevents',
                 view: 'touchevents.TouchEvents',
                 leaf: true
-            }/*, {
+            }, {
                 text: 'Data',
                 id: 'data',
-                items: [{
+                items: [/*{
                     text: 'Nested Loading',
                     view: 'NestedLoading',
                     leaf: true,
                     id: 'nestedloading'
-                }, {
+                }, */{
                     text: 'JSONP',
                     leaf: true,
-                    id: 'jsonp'
+                    id: 'jsonp',
+                    view: 'data.JSONP'
                 }, {
                     text: 'YQL',
                     leaf: true,
-                    id: 'yql'
-                }, {
+                    id: 'yql',
+                    view: 'data.YQL'
+                }/*, {
                     text: 'Ajax',
                     leaf: true,
                     id: 'ajax'
-                }]
-            }*/, {
+                }/*]
+            }, {
                 text: 'Media',
                 id: 'media',
                 items: [{
@@ -528,7 +530,7 @@ Ext.define('KitchenSink.store.Demos', {
                     view: 'media.Audio',
                     leaf: true,
                     id: 'audio'
-                }]
+                }*/]
             }/*, {
                 text: 'Themes',
                 id: 'theme',

@@ -186,6 +186,8 @@
     <Content Include="Examples\binding\TwoWay.ascx" />
     <Content Include="Examples\binding\TwoWayFormula.ascx" />
     <Content Include="Default.aspx" />
+    <Content Include="Examples\data\YQL.ascx" />
+    <Content Include="Examples\data\JSONP.ascx" />
     <Content Include="Examples\events\directevents\DurationMessages.ascx" />
     <Content Include="Examples\events\directevents\Basic.ascx" />
     <Content Include="Examples\graphics\cartesian-charts\Area.ascx" />
