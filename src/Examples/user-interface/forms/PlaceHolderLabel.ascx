@@ -1,34 +1,37 @@
-﻿<%-- Example not working at all. Seems some JavaScript must be included in order for this to work. --%>
-<%-- Works fine on Sencha. --%>
-
-<ext:FormPanel runat="server">
+﻿<ext:FormPanel runat="server" PaddingSpec="2em">
     <Items>
-        <ext:FieldSet runat="server">
+        <ext:TextField runat="server" PlaceHolder="Title">
+            <Plugins>
+                <ext:PlaceHolderLabel runat="server" />
+            </Plugins>
+        </ext:TextField>
+        <ext:Container runat="server" Cls="container-borders" Layout="HBoxLayout">
             <Defaults>
-                <ext:Parameter Name="labelAlign" Value="top" />
+                <ext:Parameter Name="flex" Value="1" Mode="Raw" />
             </Defaults>
             <Items>
-                <ext:TextField runat="server" Label="Title">
+                <ext:TextField runat="server" PlaceHolder="Price">
                     <CustomConfig>
-                        <ext:ConfigItem Name="labelAsPlaceHolder" Value="true" Mode="Raw" />
+                        <ext:ConfigItem Name="plugins">
+                            <ext:Parameter Name="type" Value="placeholderlabel" />
+                        </ext:ConfigItem>
                     </CustomConfig>
                 </ext:TextField>
-                <ext:TextField runat="server" Label="Price">
+                <ext:TextField runat="server" PlaceHolder="Specific Location (optional)">
                     <CustomConfig>
-                        <ext:ConfigItem Name="labelAsPlaceHolder" Value="true" Mode="Raw" />
+                        <ext:ConfigItem Name="plugins">
+                            <ext:Parameter Name="type" Value="placeholderlabel" />
+                        </ext:ConfigItem>
                     </CustomConfig>
                 </ext:TextField>
-                <ext:TextField runat="server" Label="Specific Location (optional)">
-                    <CustomConfig>
-                        <ext:ConfigItem Name="labelAsPlaceHolder" Value="true" Mode="Raw" />
-                    </CustomConfig>
-                </ext:TextField>
-                <ext:TextArea runat="server" Label="Description">
-                    <CustomConfig>
-                        <ext:ConfigItem Name="labelAsPlaceHolder" Value="true" Mode="Raw" />
-                    </CustomConfig>
-                </ext:TextArea>
             </Items>
-        </ext:FieldSet>
+        </ext:Container>
+        <ext:TextArea runat="server" PlaceHolder="Description">
+            <CustomConfig>
+                <ext:ConfigItem Name="plugins">
+                    <ext:Parameter Name="type" Value="placeholderlabel" />
+                </ext:ConfigItem>
+            </CustomConfig>
+        </ext:TextArea>
     </Items>
 </ext:FormPanel>
