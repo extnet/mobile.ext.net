@@ -11,27 +11,21 @@
             </Defaults>
             <Items>
                 <ext:TextField runat="server" PlaceHolder="Price">
-                    <CustomConfig>
-                        <ext:ConfigItem Name="plugins">
-                            <ext:Parameter Name="type" Value="placeholderlabel" />
-                        </ext:ConfigItem>
-                    </CustomConfig>
+                    <Plugins>
+                        <ext:PlaceHolderLabel runat="server" />
+                    </Plugins>
                 </ext:TextField>
                 <ext:TextField runat="server" PlaceHolder="Specific Location (optional)">
-                    <CustomConfig>
-                        <ext:ConfigItem Name="plugins">
-                            <ext:Parameter Name="type" Value="placeholderlabel" />
-                        </ext:ConfigItem>
-                    </CustomConfig>
+                    <Plugins>
+                        <ext:PlaceHolderLabel runat="server" />
+                    </Plugins>
                 </ext:TextField>
             </Items>
         </ext:Container>
         <ext:TextArea runat="server" PlaceHolder="Description">
-            <CustomConfig>
-                <ext:ConfigItem Name="plugins">
-                    <ext:Parameter Name="type" Value="placeholderlabel" />
-                </ext:ConfigItem>
-            </CustomConfig>
+            <Plugins>
+                <ext:PlaceHolderLabel runat="server" />
+            </Plugins>
         </ext:TextArea>
     </Items>
 </ext:FormPanel>
