@@ -41,6 +41,8 @@
         <li><a href="Viewport_Menus_2.aspx">Viewport Menus 2</a></li>
         <li><a href="Viewport_Menus_3.aspx">Viewport Menus 3</a></li>
         <br />
+        <li><a href="Map_Basic.aspx">Basic Map</a></li>
+        <li><a href="#">User position-based Map (to do)</a></li>
     </ul>
 </body>
 </html>

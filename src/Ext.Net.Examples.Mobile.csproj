@@ -252,6 +252,7 @@
     <Content Include="resources\js\examples\vectoricons.js" />
     <Content Include="resources\js\main.js" />
     <Content Include="resources\video\BigBuck.m4v" />
+    <Content Include="StandaloneExamples\Map_Basic.aspx" />
     <Content Include="StandaloneExamples\DataView_Basic.aspx" />
     <Content Include="StandaloneExamples\DataView_Events.aspx" />
     <Content Include="StandaloneExamples\DataView_Methods.aspx" />
