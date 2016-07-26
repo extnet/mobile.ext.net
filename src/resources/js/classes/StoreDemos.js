@@ -50,6 +50,36 @@ Ext.define('KitchenSink.store.Demos', {
                     view: 'user-interface.Buttons',
                     id: 'buttons'
                 }, {
+                    text: 'Grids',
+                    leaf: false,
+                    id: 'grids',
+                    items: [{
+                        text: 'Basic',
+                        leaf: true,
+                        view: 'user-interface.grids.Basic',
+                        id: 'basicgrid'
+                    }, {
+                        text: 'Editable',
+                        leaf: true,
+                        view: 'user-interface.grids.Editable',
+                        id: 'editablegrid'
+                    }, {
+                        text: 'Multi Selection',
+                        leaf: true,
+                        view: 'user-interface.grids.MultiSelection',
+                        id: 'multiselectiongrid'
+                    }, {
+                        text: 'Renderer & Template',
+                        leaf: true,
+                        view: 'user-interface.grids.RendererTemplate',
+                        id: 'gridrenderertemplate'
+                    }, {
+                        text: 'Columns',
+                        leaf: true,
+                        view: 'user-interface.grids.Columns',
+                        id: 'gridcolumns'
+                    }]
+                }, {
                     text: 'Forms',
                     leaf: false,
                     id: 'forms',

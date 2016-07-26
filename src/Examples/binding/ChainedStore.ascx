@@ -38,28 +38,36 @@
         <ext:VBoxLayoutConfig Align="Stretch" />
     </LayoutConfig>
     <Items>
-        <%-- We don't have the Grid component yet. --%>
-        <ext:Component runat="server" MinHeight="225" Flex="3" BindString="{everyone}">
-            <CustomConfig>
-                <ext:ConfigItem Name="xtype" Value="grid" />
-                <ext:ConfigItem Name="title" Value="All people" />
-                <ext:ConfigItem Name="columns"
-                    Value="[{ text: 'First Name', width: 200, dataIndex: 'FirstName' },{ text: 'Last Name', width: 200, dataIndex: 'LastName' },{ text: 'Age', width: 100, dataIndex: 'Age' }]"
-                    Mode="Raw" />
-            </CustomConfig>
-        </ext:Component>
-        <ext:Component runat="server" MinHeight="300" Flex="4" BindString="{ageFiltered}">
-            <CustomConfig>
-                <ext:ConfigItem Name="xtype" Value="grid" />
-                <ext:ConfigItem Name="titlebar" Value="null" Mode="Raw" />
-                <ext:ConfigItem Name="items"
-                    Value="[{ xtype: 'titlebar', docked: 'top', bind: 'People aged {minimumAge} or over' },{ xtype: 'singlesliderfield', docked: 'top', label: 'Minimum Age', bind: '{minimumAge}' }]"
-                    Mode="Raw" />
-                <ext:ConfigItem Name="columns"
-                    Value="[{ text: 'First Name', width: 200, dataIndex: 'FirstName' },{ text: 'Last Name', width: 200, dataIndex: 'LastName' },{ text: 'Age', width: 100, dataIndex: 'Age' }]"
-                    Mode="Raw" />
-            </CustomConfig>
-        </ext:Component>
+        <ext:Grid
+            runat="server"
+            MinHeight="225"
+            Flex="3"
+            BindString="{everyone}"
+            Title="All people">
+            <Columns>
+                <ext:Column runat="server" Text="First Name" Width="200" DataIndex="FirstName" />
+                <ext:Column runat="server" Text="Last Name" Width="200" DataIndex="LastName" />
+                <ext:Column runat="server" Text="Age" Width="100" DataIndex="Age" />
+            </Columns>
+        </ext:Grid>
+
+        <ext:Grid
+            runat="server"
+            MinHeight="300"
+            Flex="4"
+            BindString="{ageFiltered}"
+            Title="All people">
+            <Columns>
+                <ext:Column runat="server" Text="First Name" Width="200" DataIndex="FirstName" />
+                <ext:Column runat="server" Text="Last Name" Width="200" DataIndex="LastName" />
+                <ext:Column runat="server" Text="Age" Width="100" DataIndex="Age" />
+            </Columns>
+            <Items>
+                <ext:TitleBar runat="server" Docked="top" BindString="People aged {minimumAge} or over" />
+
+                <ext:SingleSlider runat="server" Docked="Top" Label="Minimum Age" BindString="{minimumAge}" />
+            </Items>
+        </ext:Grid>
     </Items>
     <Bin>
         <ext:Store runat="server" ID="Store1" Data="<%# GetPeople.RandomData(15, 10) %>" />

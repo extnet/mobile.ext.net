@@ -222,6 +222,11 @@
     <Content Include="Examples\user-interface\forms\PlaceHolderLabel.ascx" />
     <Content Include="Examples\user-interface\forms\Sliders.ascx" />
     <Content Include="Examples\user-interface\forms\ToolbarInput.ascx" />
+    <Content Include="Examples\user-interface\grids\RendererTemplate.ascx" />
+    <Content Include="Examples\user-interface\grids\Columns.ascx" />
+    <Content Include="Examples\user-interface\grids\MultiSelection.ascx" />
+    <Content Include="Examples\user-interface\grids\Editable.ascx" />
+    <Content Include="Examples\user-interface\grids\Basic.ascx" />
     <Content Include="Examples\user-interface\Icons.ascx" />
     <Content Include="Examples\user-interface\lists\Basic.ascx" />
     <Content Include="Examples\user-interface\lists\Disclosure.ascx" />
