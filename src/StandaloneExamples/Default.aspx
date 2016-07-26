@@ -42,7 +42,7 @@
         <li><a href="Viewport_Menus_3.aspx">Viewport Menus 3</a></li>
         <br />
         <li><a href="Map_Basic.aspx">Basic Map</a></li>
-        <li><a href="#">User position-based Map (to do)</a></li>
+        <li><a href="BingMap_Basic.aspx">Basic Bing Map</a></li>
     </ul>
 </body>
 </html>
