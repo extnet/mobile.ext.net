@@ -507,16 +507,16 @@ Ext.define('KitchenSink.store.Demos', {
                     leaf: true,
                     id: 'jsonp',
                     view: 'data.JSONP'
-                }, {
+                }/*, {
                     text: 'YQL',
                     leaf: true,
                     id: 'yql',
                     view: 'data.YQL'
-                }/*, {
+                }, {
                     text: 'Ajax',
                     leaf: true,
                     id: 'ajax'
-                }/*]
+                }*/]
             }, {
                 text: 'Media',
                 id: 'media',
@@ -530,7 +530,7 @@ Ext.define('KitchenSink.store.Demos', {
                     view: 'media.Audio',
                     leaf: true,
                     id: 'audio'
-                }*/]
+                }]
             }/*, {
                 text: 'Themes',
                 id: 'theme',
