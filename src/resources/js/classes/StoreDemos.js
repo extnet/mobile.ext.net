@@ -30,7 +30,7 @@ Ext.define('KitchenSink.store.Demos', {
         defaultRootProperty: 'items',
         root: {
             id: 'root',
-            text: 'Kitchen Sink',
+            text: 'Ext.NET Mobile',
             items: [{
                 text: 'User Interface',
                 id: 'ui',
