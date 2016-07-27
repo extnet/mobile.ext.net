@@ -24,7 +24,7 @@
         <ext:List runat="server" Infinite="true" Flex="1">
             <ItemTpl runat="server">
                 <Html>
-                    <span class="x-list-sortablehandle" style="height: 20px; width: 20px; background-color: gray; float: left;"></span>
+                    <span class="x-list-sortablehandle" style="height: 30px; width: 30px; background-color: gray; float: left;"></span>
                     &nbsp;{name}
                 </Html>
             </ItemTpl>
