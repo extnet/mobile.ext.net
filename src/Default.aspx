@@ -19,9 +19,6 @@
         viewName = viewName.Replace(".", @"\");
         path = String.Concat(path, viewName, ".ascx");
 
-        // For the sake of demonstration
-        // System.Threading.Thread.Sleep(1500);
-
         return ComponentLoader.ToConfig(path);
     }
 </script>
@@ -34,7 +31,7 @@
 
     <link rel="stylesheet" type="text/css" href="/resources/css/KitchenSink-all.css" />
 
-    <script src="resources/js/classes/StoreDemos.js?test"></script>
+    <script src="resources/js/classes/StoreDemos.js?v=5"></script>
     <script src="resources/js/classes/SourceOverlay.js"></script>
 
     <script src="resources/js/main.js"></script>

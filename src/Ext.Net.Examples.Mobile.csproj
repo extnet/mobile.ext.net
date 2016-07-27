@@ -229,6 +229,7 @@
     <Content Include="Examples\user-interface\grids\Basic.ascx" />
     <Content Include="Examples\user-interface\Icons.ascx" />
     <Content Include="Examples\user-interface\lists\Buffered.ascx" />
+    <Content Include="Examples\user-interface\lists\Sortable.ascx" />
     <Content Include="Examples\user-interface\lists\PullRefresh.ascx" />
     <Content Include="Examples\user-interface\lists\Paging.ascx" />
     <Content Include="Examples\user-interface\lists\Basic.ascx" />
