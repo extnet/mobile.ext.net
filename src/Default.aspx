@@ -44,7 +44,7 @@
         runat="server"
         UseTitleAsBackText="false"
         StoreID="Demos"
-        Title="Kitchen Sink"
+        Title="Ext.NET Mobile"
         TemplateWidget="true">
         <Toolbar
             ID="MainNavigationBar"
