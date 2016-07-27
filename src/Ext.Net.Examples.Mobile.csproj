@@ -228,6 +228,8 @@
     <Content Include="Examples\user-interface\grids\Editable.ascx" />
     <Content Include="Examples\user-interface\grids\Basic.ascx" />
     <Content Include="Examples\user-interface\Icons.ascx" />
+    <Content Include="Examples\user-interface\lists\Buffered.ascx" />
+    <Content Include="Examples\user-interface\lists\Paging.ascx" />
     <Content Include="Examples\user-interface\lists\Basic.ascx" />
     <Content Include="Examples\user-interface\lists\Disclosure.ascx" />
     <Content Include="Examples\user-interface\lists\Grouped.ascx" />
@@ -304,6 +306,9 @@
     <Compile Include="Data\Plot.ashx.cs">
       <DependentUpon>Plot.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Data\Company.ashx.cs">
+      <DependentUpon>Company.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Data\StockPrice.ashx.cs">
       <DependentUpon>StockPrice.ashx</DependentUpon>
     </Compile>
@@ -322,6 +327,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\GetServerTime.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Company.ashx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

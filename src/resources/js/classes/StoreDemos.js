@@ -165,6 +165,24 @@ Ext.define('KitchenSink.store.Demos', {
                         leaf: true,
                         view: 'user-interface.lists.Disclosure',
                         id: 'disclosurelist'
+                    }, {
+                        text: 'Paging',
+                        leaf: true,
+                        view: 'user-interface.lists.Paging',
+                        id: 'paginglist',
+                        otherContent: [{
+                            type: 'Company.ashx.cs',
+                            path: 'Data/Company.ashx.cs'
+                        }]
+                    }, {
+                        text: 'Buffered',
+                        leaf: true,
+                        view: 'user-interface.lists.Buffered',
+                        id: 'bufferedlist',
+                        otherContent: [{
+                            type: 'Company.ashx.cs',
+                            path: 'Data/Company.ashx.cs'
+                        }]
                     }]
                 }, {
                     text: 'Nested Lists',
