@@ -1,6 +1,6 @@
 ﻿Ext.define('KitchenSink.view.SourceItem', {
     extend: 'Ext.Panel',
-    padding: 20,
+    padding: 10,
     xtype: 'sourceitem',
 
     config: {
