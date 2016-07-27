@@ -5,30 +5,22 @@
     {
         new 
         { 
-            name = "Lisa", 
-            email = "lisa@simpsons.com",
-            phone = "555-111-1224"  
+            name = "Lisa"
         },
         
         new 
         { 
-            name = "Bart",   
-            email = "bart@simpsons.com",  
-            phone = "555-222-1234" 
+            name = "Bart"  
         },
         
         new 
         { 
-            name = "Homer",  
-            email = "homer@simpsons.com",  
-            phone = "555-222-1244"  
+            name = "Homer" 
         },
         
         new 
         { 
-            name = "Marge",  
-            email = "marge@simpsons.com", 
-            phone = "555-222-1254"  
+            name = "Marge" 
         }
     };
 </script>
@@ -38,14 +30,20 @@
         <ext:Store runat="server" DataSource="<%# Data %>" AutoDataBind="true">
             <Fields>
                 <ext:ModelField Name="name" />
-                <ext:ModelField Name="email" />
-                <ext:ModelField Name="phone" />
             </Fields>
         </ext:Store>
     </Store>
     <Columns>
-        <ext:Column runat="server" Text="Name" DataIndex="name" Width="200" />
-        <ext:Column runat="server" Text="Email" DataIndex="email" Width="250" />
-        <ext:Column runat="server" Text="Phone" DataIndex="phone" Width="150" />
+        <ext:Column runat="server" Text="Name" DataIndex="name" Width="200">
+            <Renderer Handler="return value + ' Simpson';" />
+        </ext:Column>
+
+        <ext:Column runat="server" Text="Email" Width="200">
+            <Tpl runat="server">
+                <Html>
+                    {name:lowercase}@simpsons.com
+                </Html>
+            </Tpl>
+        </ext:Column>
     </Columns>
 </ext:Grid>
