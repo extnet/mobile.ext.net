@@ -183,6 +183,15 @@ Ext.define('KitchenSink.store.Demos', {
                             type: 'Company.ashx.cs',
                             path: 'Data/Company.ashx.cs'
                         }]
+                    }, {
+                        text: 'Pull Refresh',
+                        leaf: true,
+                        view: 'user-interface.lists.PullRefresh',
+                        id: 'pullrefreshlist',
+                        otherContent: [{
+                            type: 'Company.ashx.cs',
+                            path: 'Data/Company.ashx.cs'
+                        }]
                     }]
                 }, {
                     text: 'Nested Lists',

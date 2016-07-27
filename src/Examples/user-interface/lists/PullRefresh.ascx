@@ -1,16 +1,19 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:List runat="server" ScrollToTopOnRefresh="false">
+<ext:List runat="server">
     <ItemTpl runat="server">
-        <Html>{Company}, Loaded At: {LastUpdate:date('H:i:s')}</Html>
+        <Html>{Company}, Server Time: {LastUpdate:date('H:i:s')}</Html>
     </ItemTpl>
     <Store>
-        <ext:Store runat="server" PageSize="15">
+        <ext:Store runat="server">
             <Proxy>
                 <ext:AjaxProxy Url="Data/Company.ashx">
                     <Reader>
                         <ext:JsonReader RootProperty="data" />
                     </Reader>
+                    <ExtraParams>
+                        <ext:Parameter Name="count" Value="50" Mode="Raw" />
+                    </ExtraParams>
                 </ext:AjaxProxy>
             </Proxy>
             <Model>
@@ -24,7 +27,7 @@
         </ext:Store>
     </Store>
     <Plugins>
-        <ext:ListPaging runat="server" />
+        <ext:PullRefresh runat="server" LastUpdatedDateFormat="yyyy-MM-dd HH:mm:ss" />
     </Plugins>
 </ext:List>
 

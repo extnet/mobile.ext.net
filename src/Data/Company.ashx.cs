@@ -10,7 +10,7 @@ namespace Ext.Net.Mobile.Examples
     /// </summary>
     public class Company : IHttpHandler, IReadOnlySessionState
     {
-        class StockQuotation
+        public class StockQuotation
         {
             public string Company { get; set; }
             public int Price { get; set; }
@@ -19,12 +19,28 @@ namespace Ext.Net.Mobile.Examples
 
         public void ProcessRequest(HttpContext context)
         {
-            StoreRequestParameters parameters = new StoreRequestParameters(context);
 
+            StoreResponseData r = new StoreResponseData();
+
+            if (context.Request["count"] != null)
+            {
+                var count = int.Parse(context.Request["count"]);
+
+                r.Data = JSON.Serialize(this.GetData(0, count));
+            }
+            else
+            {
+                StoreRequestParameters parameters = new StoreRequestParameters(context);
+                r.Data = JSON.Serialize(this.GetData(parameters.Start, parameters.Limit));
+                r.Total = 70;
+            }
+
+            r.Return();
+        }
+
+        public List<StockQuotation> GetData(int start, int limit)
+        {
             List<StockQuotation> data = new List<StockQuotation>();
-
-            int start = parameters.Start,
-                limit = parameters.Limit;
 
             Random randow = new Random();
             DateTime now = DateTime.Now;
@@ -41,12 +57,7 @@ namespace Ext.Net.Mobile.Examples
                 data.Add(qoute);
             }
 
-            StoreResponseData r = new StoreResponseData();
-
-            r.Data = JSON.Serialize(data);
-            r.Total = 70;
-
-            r.Return();
+            return data;
         }
 
         public bool IsReusable

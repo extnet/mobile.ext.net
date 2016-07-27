@@ -2,7 +2,7 @@
 
 <ext:List runat="server">
     <ItemTpl runat="server">
-        <Html>{Company} Loaded at: {LastUpdate:date('H:i:s')}</Html>
+        <Html>{Company}, Loaded At: {LastUpdate:date('H:i:s')}</Html>
     </ItemTpl>
     <Store>
         <ext:Store runat="server" PageSize="15">
