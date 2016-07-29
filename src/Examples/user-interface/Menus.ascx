@@ -82,7 +82,6 @@
                 <br />
                 You can show the menus by either tapping the buttons below,
                 or by swiping from the edge of the screen.
-           
             </Content>
         </ext:Component>
 
