@@ -87,7 +87,8 @@
                     ID="MenuButton"
                     runat="server"
                     Align="Right"
-                    IconCls="x-fa fa-navicon">
+                    IconCls="x-fa fa-navicon"
+                    MarginSpec="0 0 0 5">
                 </ext:Button>
             </Items>
         </Toolbar>
