@@ -317,7 +317,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ExtNetMobileModel.cs" />
     <Compile Include="Models\KitchenSink\Countries.cs" />
     <Compile Include="Models\KitchenSink\Person.cs" />
     <Compile Include="Models\KitchenSink\Speaker.cs" />
