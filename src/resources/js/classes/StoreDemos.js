@@ -238,12 +238,12 @@ Ext.define('KitchenSink.store.Demos', {
                     view: 'user-interface.Overlays',
                     leaf: true,
                     id: 'overlays'
-                }/*, {
+                }, {
                     text: 'Menus',
                     view: 'user-interface.Menus',
                     leaf: true,
                     id: 'menus'
-                }*/]
+                }]
             }, {
                 text: 'Data Binding',
                 id: 'databinding',

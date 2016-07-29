@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" type="text/css" href="/resources/css/KitchenSink-all.css" />
 
-    <script src="resources/js/classes/StoreDemos.js?v=6"></script>
+    <script src="resources/js/classes/StoreDemos.js?v=7"></script>
     <script src="resources/js/classes/SourceOverlay.js?v=3"></script>
 
     <script src="resources/js/main.js?v=1"></script>
@@ -88,8 +88,7 @@
                     runat="server"
                     Align="Right"
                     IconCls="x-fa fa-navicon"
-                    MarginSpec="0 0 0 5">
-                </ext:Button>
+                    MarginSpec="0 0 0 5" />
             </Items>
         </Toolbar>
     </ext:NestedList>

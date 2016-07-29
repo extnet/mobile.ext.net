@@ -1,95 +1,108 @@
 ﻿<%@ Control Language="C#" %>
 
-<script type="text/javascript">
-    <%--
-     The example is based in extending the Ext.Container component so the
-     custom behavior of updateHidden and getMenuCfg are overridden in the
-     process.
-    --%>
-    Ext.define('Ext.Container', {
-        override: 'Ext.Container',
-        updateHiddenHandler: function(hidden) {
-            this.callParent(arguments);
+<ext:Container runat="server" Padding="10" Scrollable="Both">
+    <Bin>
+        <ext:Menu runat="server" Side="Top">
+            <Items>
+                <ext:Button
+                    runat="server"
+                    Text="Settings"
+                    IconCls="x-fa fa-gear"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
 
-            if (hidden) {
-                Ext.Viewport.removeMenu('left');
-                Ext.Viewport.removeMenu('right');
-                Ext.Viewport.removeMenu('bottom');
-                Ext.Viewport.removeMenu('top');
-            } else {
-                Ext.Viewport.setMenu(this.getMenuCfg('top'), {
-                    side: 'top'
-                });
+                <ext:Button
+                    runat="server"
+                    Text="New Item"
+                    IconCls="x-fa fa-pencil"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
 
-                Ext.Viewport.setMenu(this.getMenuCfg('bottom'), {
-                    side: 'bottom',
-                    cover: false
-                });
+                <ext:Button
+                    runat="server"
+                    Text="Star"
+                    IconCls="x-fa fa-star"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
+            </Items>
+        </ext:Menu>
 
-                Ext.Viewport.setMenu(this.getMenuCfg('left'), {
-                    side: 'left',
-                    reveal: true
-                });
+        <ext:Menu runat="server" Side="Bottom" Cover="false">
+            <Items>
+                <ext:Button
+                    runat="server"
+                    Text="Settings"
+                    IconCls="x-fa fa-gear"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
 
-                Ext.Viewport.setMenu(this.getMenuCfg('right'), {
-                    side: 'right',
-                    reveal: true
-                });
-            }
-        },
-        getMenuCfgHandler: function (side) {
-            return {
-                items: [{
-                    text: 'Settings',
-                    iconCls: 'x-fa fa-gear',
-                    scope: this,
-                    handler: function () {
-                        Ext.Viewport.hideMenu(side);
-                    }
-                }, {
-                    text: 'New Item',
-                    iconCls: 'x-fa fa-pencil',
-                    scope: this,
-                    handler: function () {
-                        Ext.Viewport.hideMenu(side);
-                    }
-                }, {
-                    xtype: 'button',
-                    text: 'Star',
-                    iconCls: 'x-fa fa-star',
-                    scope: this,
-                    handler: function () {
-                        Ext.Viewport.hideMenu(side);
-                    }
-                }]
-            }
-        }
-    });
-</script>
-<ext:Container runat="server" Padding="20" Scrollable="Both">
+                <ext:Button
+                    runat="server"
+                    Text="New Item"
+                    IconCls="x-fa fa-pencil"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
+
+                <ext:Button
+                    runat="server"
+                    Text="Star"
+                    IconCls="x-fa fa-star"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
+            </Items>
+        </ext:Menu>
+
+        <ext:Menu runat="server" Side="Left" Reveal="true">
+            <Items>
+                <ext:Button
+                    runat="server"
+                    Text="Settings"
+                    IconCls="x-fa fa-gear"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
+
+                <ext:Button
+                    runat="server"
+                    Text="New Item"
+                    IconCls="x-fa fa-pencil"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
+
+                <ext:Button
+                    runat="server"
+                    Text="Star"
+                    IconCls="x-fa fa-star"
+                    Handler="Ext.Viewport.hideMenu(this.up('menu').side);" />
+            </Items>
+        </ext:Menu>
+    </Bin>
     <Defaults>
-        <ext:Parameter Name="cls" Value="demobtn" />
         <ext:Parameter Name="margin" Value="10 0" />
     </Defaults>
     <Items>
-        <ext:Component runat="server"
-            StyleHtmlContent="true">
+        <ext:Component
+            runat="server"
+            StyleHtmlContent="true"
+            Margin="0">
             <Content>
-                <b>Ext.Menu</b> is a component introduced in Sencha Touch 2.3 which allows you to easily display sliding
-                menus from any side of the screen.<br /><br />You can show the menus by either tapping the buttons below,
+                <b>Ext.Menu</b> allows you to easily display sliding
+                menus from any side of the screen.<br />
+                <br />
+                You can show the menus by either tapping the buttons below,
                 or by swiping from the edge of the screen.
+           
             </Content>
         </ext:Component>
-        <ext:Button runat="server"
+
+        <ext:Button
+            runat="server"
             Text="Toggle left menu (reveal)"
             Handler="Ext.Viewport.toggleMenu('left');" />
-        <ext:Button runat="server"
+
+        <ext:Button
+            runat="server"
             Text="Toggle right menu (reveal)"
             Handler="Ext.Viewport.toggleMenu('right');" />
-        <ext:Button runat="server"
+
+        <ext:Button
+            runat="server"
             Text="Toggle top menu (cover)"
             Handler="Ext.Viewport.toggleMenu('top');" />
-        <ext:Button runat="server"
+
+        <ext:Button
+            runat="server"
             Text="Toggle bottom menu (slide)"
             Handler="Ext.Viewport.toggleMenu('bottom');" />
     </Items>
