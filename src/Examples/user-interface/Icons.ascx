@@ -21,7 +21,7 @@
             runat="server"
             Title="Info"
             Cls="card"
-            Html="Tabs and buttons can display any <a href='http://fortawesome.github.io.Font-Awesome/icons/'>Font Awesome</a> icon using the <code>iconCls</code> config."
+            Html="Tabs and buttons can display any <a href='http://fortawesome.github.io/Font-Awesome/icons/'>Font Awesome</a> icon using the <code>iconCls</code> config."
             IconCls="x-fa fa-info-circle" />
 
         <ext:Panel
