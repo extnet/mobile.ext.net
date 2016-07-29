@@ -27,7 +27,8 @@ Ext.define('KitchenSink.controller.Main', {
             toolbar: '#MainNavigationBar',
             sourceButton: '#ViewSourceButton',
             themeToggleButton: 'button[action=toggleTheme]',
-
+            menuButton: '#MenuButton',
+            linksMenu: '#LinksMenu',
 
             sourceOverlay: {
                 selector: 'sourceoverlay',
@@ -47,6 +48,9 @@ Ext.define('KitchenSink.controller.Main', {
                 itemtap: 'onNavTap',
                 leafitemtap: 'onNavLeafTap'
 
+            },
+            menuButton: {
+                tap: 'onMenuButtonTap'
             }
         },
 
@@ -178,6 +182,12 @@ Ext.define('KitchenSink.controller.Main', {
             }
         }
 
+    },
+
+    onMenuButtonTap: function() {
+        var menu = this.getLinksMenu();
+
+        Ext.Viewport.showMenu("right")
     },
 
     /**

@@ -34,10 +34,33 @@
     <script src="resources/js/classes/StoreDemos.js?v=6"></script>
     <script src="resources/js/classes/SourceOverlay.js?v=3"></script>
 
-    <script src="resources/js/main.js"></script>
+    <script src="resources/js/main.js?v=1"></script>
+
+    <style>
+        .links-menu {
+            background-color: #2a333c;
+        }
+
+        .links-menu a {
+            color: #b0bcc7;
+        }
+    </style>
 </head>
 <body>
     <ext:ResourceManager runat="server" />
+
+    <ext:Menu
+        ID="LinksMenu"
+        runat="server"
+        Side="Right"
+        Cls="links-menu"
+        WidthSpec="40%">
+        <Items>
+            <ext:Component runat="server" Html="<a href='http://ext.net'>Ext.NET Home</a>" />
+            <ext:Component runat="server" Html="<a href='http://forums.ext.net'>Forums</a>" />
+            <ext:Component runat="server" Html="<a href='http://ext.net/download'>Download</a>" />
+        </Items>
+    </ext:Menu>
 
     <ext:NestedList
         ID="MainNestedList"
@@ -58,6 +81,13 @@
                     Align="Right"
                     UI="Action"
                     Text="Source" />
+
+                <ext:Button
+                    ID="MenuButton"
+                    runat="server"
+                    Align="Right"
+                    IconCls="x-fa fa-navicon">
+                </ext:Button>
             </Items>
         </Toolbar>
     </ext:NestedList>
