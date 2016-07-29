@@ -4,12 +4,15 @@
     <LayoutConfig>
         <ext:VBoxLayoutConfig Align="Start" />
     </LayoutConfig>
+    <Defaults>
+        <ext:Parameter Name="margin" Value="10 0 0 10" Mode="Value" />
+    </Defaults>
     <Items>
         <ext:Component runat="server" Html="Simple DirectEvent:" />
 
         <ext:Button runat="server" Text="Click Me" DirectTapUrl="~/Data/GetServerTime.ashx" />
 
-        <ext:Component runat="server" Html="<br/>DirectEvent with confirmation:" />
+        <ext:Component runat="server" Html="DirectEvent with confirmation:" />
 
         <ext:Button runat="server" Text="Click Me">
             <DirectEvents>
@@ -19,7 +22,7 @@
             </DirectEvents>
         </ext:Button>
 
-        <ext:Component runat="server" Html="<br/>DirectEvent with mask:" />
+        <ext:Component runat="server" Html="DirectEvent with mask:" />
 
         <ext:Button runat="server" Text="Click Me">
             <DirectEvents>

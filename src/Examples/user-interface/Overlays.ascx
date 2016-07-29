@@ -78,7 +78,8 @@
                             title: 'Overlay Title'
                         }
                     ],
-                    scrollable: true
+                    scrollable: true,
+                    padding: 10
                 });
             }
 
