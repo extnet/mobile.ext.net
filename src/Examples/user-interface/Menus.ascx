@@ -93,7 +93,7 @@
 
         <ext:Button
             runat="server"
-            Text="Toggle right menu (reveal)"
+            Text="Toggle right (links) menu"
             Handler="Ext.Viewport.toggleMenu('right');" />
 
         <ext:Button
