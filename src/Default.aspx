@@ -43,6 +43,7 @@
 
         .links-menu a {
             color: #b0bcc7;
+            text-decoration: none;
         }
     </style>
 </head>
