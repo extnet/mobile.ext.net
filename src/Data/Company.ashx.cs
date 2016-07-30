@@ -19,7 +19,6 @@ namespace Ext.Net.Mobile.Examples
 
         public void ProcessRequest(HttpContext context)
         {
-
             StoreResponseData r = new StoreResponseData();
 
             if (context.Request["count"] != null)

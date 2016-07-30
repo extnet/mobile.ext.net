@@ -1,4 +1,4 @@
-﻿<%@  Control Language="C#" %>
+﻿<%@ Control Language="C#" %>
 
 <%@ Import Namespace="Ext.Net.Mobile.Examples.Class" %>
 <%@ Import Namespace="Ext.Net.Mobile.Examples.Models.KitchenSink" %>

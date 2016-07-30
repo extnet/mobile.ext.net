@@ -2,7 +2,7 @@
 
 <ext:Panel
     runat="server"
-    Cls="card" >
+    Cls="card">
     <Listeners>
         <Hide Handler="this.down('video').fireEvent('hide');" />
         <Show Handler="this.down('video').fireEvent('show');" />

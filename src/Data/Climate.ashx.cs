@@ -32,73 +32,73 @@ namespace Ext.Net.Mobile.Examples
 
             return new object[]
             {
-                new 
+                new
                 {
                     month = "Jan",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Feb",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Mar",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Apr",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "May",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Jun",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Jul",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Aug",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Sep",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Oct",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Nov",
                     high = min + temp + r.NextDouble() * temp,
                     low = min + r.NextDouble() * temp
                 },
-                new 
+                new
                 {
                     month = "Dec",
                     high = min + temp + r.NextDouble() * temp,

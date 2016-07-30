@@ -1,4 +1,4 @@
-﻿<%@  Control Language="C#" %>
+﻿<%@ Control Language="C#" %>
 
 <ext:FormPanel ID="basicform" runat="server">
     <Items>

@@ -151,7 +151,7 @@ Ext.define('KitchenSink.view.SourceOverlay', {
                 xtype: 'button',
                 align: 'right',
                 iconCls: 'fa fa-close',
-                handler: function() {
+                handler: function () {
                     this.up('tabpanel').hide();
                 }
             }]

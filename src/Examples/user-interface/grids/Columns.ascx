@@ -3,33 +3,33 @@
 <script runat="server">
     public static List<object> Data = new List<object>
     {
-        new 
-        { 
-            name = "Item 1", 
+        new
+        {
+            name = "Item 1",
             amount = 1000,
             visible = true,
             duedate = DateTime.Now
         },
-        
-        new 
-        { 
-            name = "Item 2", 
+
+        new
+        {
+            name = "Item 2",
             amount = 500,
             visible = false,
             duedate = DateTime.Now.AddDays(5)
         },
-        
-        new 
-        { 
-            name = "Item 3", 
+
+        new
+        {
+            name = "Item 3",
             amount = 1550,
             visible = false,
             duedate = DateTime.Now.AddMonths(1)
         },
-        
-        new 
-        { 
-            name = "Item 4", 
+
+        new
+        {
+            name = "Item 4",
             amount = 700,
             visible = true,
             duedate = DateTime.Now.AddYears(1)

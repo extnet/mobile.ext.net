@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace Ext.Net.Mobile.Examples.Models.KitchenSink
 {
     public class States
     {
-        private static string[] statesUsa = 
+        private static string[] statesUsa =
         {
             "Alabama",
             "Alaska",
@@ -87,7 +85,7 @@ namespace Ext.Net.Mobile.Examples.Models.KitchenSink
             string[] chosenList = statesUsa;
             var i = 1;
 
-            if(countryId == 2)
+            if (countryId == 2)
             {
                 i += statesUsa.Count();
                 chosenList = statesCanada;

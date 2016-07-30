@@ -16,7 +16,7 @@
                              if (idx === themes.length) {
                                  this.currentTheme = idx = 0;
                              }
-                             
+
                              chart.setTheme(themes[idx]);">
                     <CustomConfig>
                         <ext:ConfigItem Name="currentTheme" Value="0" Mode="Raw" />

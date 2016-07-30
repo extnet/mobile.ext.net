@@ -3,7 +3,8 @@
 <%@ Import Namespace="Ext.Net.Mobile.Examples.Models.KitchenSink" %>
 
 <script runat="server">
-    private void bleh() {
+    private void bleh()
+    {
 
     }
 </script>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Ext.Net.Mobile.Examples.Models.KitchenSink
+﻿namespace Ext.Net.Mobile.Examples.Models.KitchenSink
 {
     public class Speaker
     {

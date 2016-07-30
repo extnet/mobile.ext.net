@@ -3,24 +3,24 @@
 <script runat="server">
     public static List<object> Data = new List<object>
     {
-        new 
-        { 
+        new
+        {
             name = "Lisa"
         },
-        
-        new 
-        { 
-            name = "Bart"  
+
+        new
+        {
+            name = "Bart"
         },
-        
-        new 
-        { 
-            name = "Homer" 
+
+        new
+        {
+            name = "Homer"
         },
-        
-        new 
-        { 
-            name = "Marge" 
+
+        new
+        {
+            name = "Marge"
         }
     };
 </script>

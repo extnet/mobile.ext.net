@@ -41,10 +41,10 @@
             background-color: #2a333c;
         }
 
-        .links-menu a {
-            color: #b0bcc7;
-            text-decoration: none;
-        }
+            .links-menu a {
+                color: #b0bcc7;
+                text-decoration: none;
+            }
     </style>
 </head>
 <body>

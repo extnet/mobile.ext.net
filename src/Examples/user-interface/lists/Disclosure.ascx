@@ -1,7 +1,8 @@
 ﻿<%@ Control Language="C#" %>
 
 <script runat="server">
-    public object[] people_list {
+    public object[] people_list
+    {
         get
         {
             var rv = new List<object>();

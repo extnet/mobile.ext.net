@@ -47,7 +47,6 @@ Ext.define('KitchenSink.controller.Main', {
             nav: {
                 itemtap: 'onNavTap',
                 leafitemtap: 'onNavLeafTap'
-
             },
             menuButton: {
                 tap: 'onMenuButtonTap'
@@ -143,7 +142,7 @@ Ext.define('KitchenSink.controller.Main', {
 
                     me.setOverlayContent(overlay, values);
                     overlay.unmask();
-                    
+
                     demo.$cachedContent = values;
                 });
             }
@@ -181,7 +180,6 @@ Ext.define('KitchenSink.controller.Main', {
                 KitchenSink.app.setThemeVariation("light");
             }
         }
-
     },
 
     onMenuButtonTap: function() {

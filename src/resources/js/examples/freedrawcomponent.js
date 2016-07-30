@@ -1,5 +1,4 @@
 ﻿(function () {
-
     function smoothenList(points) {
         if (points.length < 3) {
             return ["M", points[0], points[1]];

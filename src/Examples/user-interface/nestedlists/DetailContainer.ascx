@@ -64,4 +64,3 @@
         <ext:Panel ID="Panel1" runat="server" Title="Details" Html="Details goes here" />
     </Items>
 </ext:Container>
-

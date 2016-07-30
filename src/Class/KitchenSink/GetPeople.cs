@@ -1,8 +1,7 @@
-﻿using System;
+﻿using Ext.Net.Mobile.Examples.Models.KitchenSink;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using Ext.Net.Mobile.Examples.Models.KitchenSink;
 
 namespace Ext.Net.Mobile.Examples.Class.KitchenSink
 {
@@ -61,7 +60,8 @@ namespace Ext.Net.Mobile.Examples.Class.KitchenSink
 
         private static string randString(ref Random rng, int length)
         {
-            if (length <= 0 || rng == null) {
+            if (length <= 0 || rng == null)
+            {
                 throw new Exception("Error generating random string: either no RNG has been passed or length is inconsistent.");
             }
 
@@ -91,8 +91,9 @@ namespace Ext.Net.Mobile.Examples.Class.KitchenSink
         public static List<Person> RandomData(int adults = 15, int children = 10)
         {
             var crowd = new List<Person>();
-            
-            if (adults < 0 || children < 0 || (adults == 0 && children == 0)) {
+
+            if (adults < 0 || children < 0 || (adults == 0 && children == 0))
+            {
                 throw new IndexOutOfRangeException("Number of adults & children must be > 0 and there should be at least one adult or child to be generated.");
             }
 
@@ -147,7 +148,8 @@ namespace Ext.Net.Mobile.Examples.Class.KitchenSink
 
                 for (i = 0; i <= accCount; i++)
                 {
-                    account.Accounts.Add(new Account() {
+                    account.Accounts.Add(new Account()
+                    {
                         Created = refDate.AddDays(rng.Next(dateRange)),
                         AccountKey = randString(ref rng, 4)
                     });

@@ -2,7 +2,7 @@
 
 <%@ Register TagPrefix="sld" TagName="loremipsum2" Src="~/Examples/animation/Slide/LoremIpsum2.ascx" %>
 
-<ext:Panel runat="server" cls="card card3" Scrollable="Both">
+<ext:Panel runat="server" Cls="card card3" Scrollable="Both">
     <Items>
         <ext:Container runat="server" Docked="Top" Html="Slide Up animation" />
         <ext:Container runat="server">

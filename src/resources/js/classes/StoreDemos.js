@@ -144,7 +144,6 @@ Ext.define('KitchenSink.store.Demos', {
                             type: 'Speakers.cs',
                             path: 'Models/KitchenSink/Speaker.cs'
                         }]
-
                     }]
                 }, {
                     text: 'Lists',

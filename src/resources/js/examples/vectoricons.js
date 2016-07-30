@@ -388,7 +388,6 @@
                                     lastHighlighted = listItem = this.getSurface('row-' + y).getItems()[x];
                                     listItem.setAttributes({ highlighted: true });
                                     previewItem.setAttributes({ path: listItem.attr.path });
-
                                 } else {
                                     lastHighlighted = null;
                                 }

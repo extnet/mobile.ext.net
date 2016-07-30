@@ -20,7 +20,7 @@
                         @operator = ">="
                     }
                 },
-                sorters = new[] 
+                sorters = new[]
                 {
                     new
                     {

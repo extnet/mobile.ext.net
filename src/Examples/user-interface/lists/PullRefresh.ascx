@@ -30,4 +30,3 @@
         <ext:PullRefresh runat="server" LastUpdatedDateFormat="yyyy-MM-dd HH:mm:ss" />
     </Plugins>
 </ext:List>
-

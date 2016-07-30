@@ -8,7 +8,7 @@
         {
             if (!X.IsAjaxRequest)
             {
-                this.Store1.DataSource = new object[] 
+                this.Store1.DataSource = new object[]
                 {
                     new
                     {   name = "Peter",

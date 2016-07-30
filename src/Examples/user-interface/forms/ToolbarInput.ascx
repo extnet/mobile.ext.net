@@ -1,6 +1,6 @@
-﻿<%@  Control Language="C#" %>
+﻿<%@ Control Language="C#" %>
 
-<ext:Panel 
+<ext:Panel
     runat="server"
     StyleHtmlContent="true"
     Html="This is a simple example of fields within toolbars.">
@@ -30,4 +30,3 @@
         </ext:Toolbar>
     </Items>
 </ext:Panel>
-

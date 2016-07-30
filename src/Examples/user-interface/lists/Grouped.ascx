@@ -1,4 +1,4 @@
-﻿<%@  Control Language="C#" %>
+﻿<%@ Control Language="C#" %>
 
 <script runat="server">
     public object[] people_list

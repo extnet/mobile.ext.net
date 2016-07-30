@@ -17,7 +17,7 @@
                              if (idx === themes.length) {
                                  this.currentTheme = idx = 0;
                              }
-                             
+
                              chart.setTheme(themes[idx]);">
                     <CustomConfig>
                         <ext:ConfigItem Name="currentTheme" Value="0" Mode="Raw" />
@@ -37,7 +37,7 @@
                     IconCls="x-fa fa-bars"
                     Handler="var chart = this.up('panel').down('[isChart]');
                                  series = chart.getSeries()[0];
-                    
+
                              this.setText(series.getStacked() ? 'Stack' : 'Group');
                              series.setStacked(!series.getStacked());
                              chart.redraw();" />
