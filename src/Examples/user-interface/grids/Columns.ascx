@@ -49,9 +49,26 @@
         </ext:Store>
     </Store>
     <Columns>
-        <ext:Column runat="server" Text="String" DataIndex="name" Width="100" />
-        <ext:NumberColumn runat="server" Text="Number" DataIndex="amount" Width="110" />
-        <ext:BooleanColumn runat="server" Text="Boolean" DataIndex="visible" Width="110" Align="Center" />
-        <ext:DateColumn runat="server" Text="Date" DataIndex="duedate" Width="150" />
+        <ext:Column
+            runat="server"
+            Text="String"
+            DataIndex="name"
+            Width="100" />
+        <ext:NumberColumn
+            runat="server"
+            Text="Number"
+            DataIndex="amount"
+            Width="110" />
+        <ext:BooleanColumn
+            runat="server"
+            Text="Boolean"
+            DataIndex="visible"
+            Width="110"
+            Align="Center" />
+        <ext:DateColumn
+            runat="server"
+            Text="Date"
+            DataIndex="duedate"
+            Width="150" />
     </Columns>
 </ext:Grid>

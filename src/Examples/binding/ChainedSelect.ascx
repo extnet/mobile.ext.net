@@ -35,7 +35,8 @@
         <ext:FieldSet runat="server"
             Instructions="'The states store contains all states, however it filters based upon the id of the selected record in the country field.">
             <Items>
-                <ext:SelectField runat="server"
+                <ext:SelectField
+                    runat="server"
                     Label="Country"
                     Reference="countryField"
                     ValueField="Id"
@@ -44,7 +45,8 @@
                         <ext:Parameter Name="store" Value="{countries}" />
                     </Bind>
                 </ext:SelectField>
-                <ext:SelectField runat="server"
+                <ext:SelectField
+                    runat="server"
                     Label="States"
                     PlaceHolder="Choose a country"
                     ValueField="Id"

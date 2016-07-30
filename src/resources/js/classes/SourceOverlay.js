@@ -21,6 +21,7 @@
 
         for (i = 0; i < len; ++i) {
             line = lines[i];
+
             if (removing) {
                 if (exampleRe.test(line)) {
                     removing = false;
@@ -59,30 +60,37 @@
 
         var highlight = Ext.Function.bind(function (str, regex, cls, fn) {
             regex.compile(regex);
+
             var match;
 
             while (match = regex.exec(str)) {
                 var mdata = fn ? fn(match) : [match.index, match[0]],
                     midx = mdata[0],
                     mstr = mdata[1];
+
                 if (!between(midx, mstr.length)) {
                     var replacement = Ext.util.Format.format(fmt, cls, mstr),
                         diff = (replacement.length - mstr.length);
                     str = str.slice(0, midx) + replacement + str.slice(midx + mstr.length);
                     regex.lastIndex = midx + replacement.length;
+
                     for (var i = 0; i < this.matches.length; i++) {
                         var m = this.matches[i];
-                        if (m[1] < midx) continue;
+
+                        if (m[1] < midx) {
+                            continue;
+                        }
 
                         m[0] += diff;
                         m[1] += diff;
                     }
+
                     this.matches.push([midx, regex.lastIndex]);
-                }
-                else {
+                } else {
                     break;
                 }
             }
+
             return str;
         }, this);
 

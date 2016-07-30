@@ -19,7 +19,10 @@
 
 <ext:Container runat="server">
     <CustomConfig>
-        <ext:ConfigItem Name="layout" Value="Ext.os.deviceType == 'Phone' ? 'fit' : { type: 'vbox', align: 'center', pack:'center' }" Mode="Raw" />
+        <ext:ConfigItem
+            Name="layout"
+            Value="Ext.os.deviceType == 'Phone' ? 'fit' : { type: 'vbox', align: 'center', pack:'center' }"
+            Mode="Raw" />
     </CustomConfig>
     <Items>
         <ext:List runat="server" Grouped="true" PinHeaders="true">

@@ -47,8 +47,7 @@
 
                         if (weather) {
                             panel.updateHtml(tpl.applyTemplate(weather));
-                        }
-                        else {
+                        } else {
                             alert('There was an error retrieving the weather.');
                         }
 

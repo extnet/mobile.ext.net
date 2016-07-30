@@ -4,7 +4,11 @@
     <Items>
         <ext:Panel runat="server" ID="IntroPanel">
             <Items>
-                <ext:Button runat="server" Text="Console" UI="Confirm" Margin="10"
+                <ext:Button
+                    runat="server"
+                    Text="Console"
+                    UI="Confirm"
+                    Margin="10"
                     Handler="showTouchPanel();" />
                 <ext:Component runat="server">
                     <Content>

@@ -31,12 +31,25 @@
 
 <ext:FormPanel runat="server" ViewModel="<%# TWFViewModel.Model %>" AutoDataBind="true">
     <Items>
-        <ext:FieldSet runat="server"
+        <ext:FieldSet
+            runat="server"
             Instructions="The Celsius value is calculated from Kelvin. When the Celsius value changes, the Kelvin value is updated via the formula. The Fahrenheight value is calculated from Celsius. When the Fahrenheit value changes, the Celsius value is updated via the formula.">
             <Items>
-                <ext:SpinnerField runat="server" Label="Kelvin °" StepValue="0.1" BindString="{kelvin}" />
-                <ext:SpinnerField runat="server" Label="Fahrenheit °" StepValue="0.1" BindString="{fahrenheit}" />
-                <ext:SpinnerField runat="server" Label="Celsius °" StepValue="0.1" BindString="{celsius}" />
+                <ext:SpinnerField
+                    runat="server"
+                    Label="Kelvin °"
+                    StepValue="0.1"
+                    BindString="{kelvin}" />
+                <ext:SpinnerField
+                    runat="server"
+                    Label="Fahrenheit °"
+                    StepValue="0.1"
+                    BindString="{fahrenheit}" />
+                <ext:SpinnerField
+                    runat="server"
+                    Label="Celsius °"
+                    StepValue="0.1"
+                    BindString="{celsius}" />
             </Items>
         </ext:FieldSet>
     </Items>

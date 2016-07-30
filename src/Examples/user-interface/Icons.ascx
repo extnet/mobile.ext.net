@@ -17,37 +17,48 @@
         <ext:Parameter Name="scrollable" Value="true" Mode="Raw" />
     </Defaults>
     <Items>
-        <ext:Panel runat="server"
+        <ext:Panel
+            runat="server"
             Title="Info"
             Cls="card"
             Html="Tabs and buttons can display any <a href='http://fortawesome.github.io.Font-Awesome/icons/'>Font Awesome</a> icon using the <code>iconCls</code> config."
             IconCls="x-fa fa-info-circle" />
-        <ext:Panel runat="server"
+
+        <ext:Panel
+            runat="server"
             Title="Download"
             Cls="card dark"
             Html="<span class=&quot;action&quot;>User tapped Download</span>"
             IconCls="x-fa fa-download" />
-        <ext:Panel runat="server"
+
+        <ext:Panel
+            runat="server"
             Title="Favorites"
             Cls="card"
             Html="<span class=&quot;action&quot;>User tapped Favorites</span>"
             IconCls="x-fa fa-star">
             <CustomConfig>
-                <ext:ConfigItem Name="hidden"
+                <ext:ConfigItem
+                    Name="hidden"
                     Value="(Ext.filterPlatform('ie10') && Ext.os.is.Phone) ? true : false"
                     Mode="Raw" />
             </CustomConfig>
         </ext:Panel>
-        <ext:Panel runat="server"
+
+        <ext:Panel
+            runat="server"
             Title="Bookmarks"
             Cls="card dark"
             Html="<span class=&quot;action&quot;>User tapped Bookmarks</span>"
             IconCls="x-fa fa-bookmark" />
-        <ext:Panel runat="server"
+
+        <ext:Panel
+            runat="server"
             Title="More"
             Cls="card"
             Html="<span class=&quot;action&quot;>User tapped More</span>"
             IconCls="x-fa fa-ellipsis-h" />
+
         <ext:Toolbar runat="server" Docked="Top" UIName="neutral">
             <LayoutConfig>
                 <ext:LayoutConfig>

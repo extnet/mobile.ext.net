@@ -49,7 +49,10 @@
             Ext.Viewport.add(this.actions);
             this.actions.show();" />
 
-        <ext:Button runat="server" Text="Overlay" Handler="
+        <ext:Button
+            runat="server"
+            Text="Overlay"
+            Handler="
             if (!this.overlay) {
                 this.overlay = Ext.Viewport.add({
                     xtype: 'panel',
@@ -84,11 +87,17 @@
             }
 
             this.overlay.show();" />
-        <ext:Button runat="server" Text="Alert"
+        <ext:Button
+            runat="server"
+            Text="Alert"
             Handler="Ext.Msg.alert('Title', 'The quick brown fox jumped over the lazy dog.', Ext.emptyFn);" />
-        <ext:Button runat="server" Text="Prompt"
+        <ext:Button
+            runat="server"
+            Text="Prompt"
             Handler="Ext.Msg.prompt('Welcome!', 'What\'s your first name?', Ext.emptyFn);" />
-        <ext:Button runat="server" Text="Confirm"
+        <ext:Button
+            runat="server"
+            Text="Confirm"
             Handler="Ext.Msg.confirm('Confirmation', 'Are you sure you want to do that?', Ext.emptyFn);" />
         <ext:Button runat="server" Text="Picker" Handler="
             if (!this.picker) {

@@ -17,7 +17,10 @@
         <ext:Button runat="server" Text="Click Me">
             <DirectEvents>
                 <Tap Url="~/Data/GetServerTime.ashx">
-                    <Confirmation ConfirmRequest="true" Title="Title" Message="Sample Confirmation Message..." />
+                    <Confirmation
+                        ConfirmRequest="true"
+                        Title="Title"
+                        Message="Sample Confirmation Message..." />
                 </Tap>
             </DirectEvents>
         </ext:Button>
