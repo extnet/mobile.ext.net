@@ -242,6 +242,7 @@
     <Content Include="Examples\user-interface\Tabs.ascx" />
     <Content Include="Examples\user-interface\Toolbars.ascx" />
     <Content Include="Examples\user-interface\TreeList.ascx" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="resources\audio\crash.mp3" />
     <Content Include="resources\css\KitchenSink-all.css" />
