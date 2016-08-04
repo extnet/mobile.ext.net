@@ -124,7 +124,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Development|AnyCPU') ">
-    <Reference Include="Ext.Net.Mobile, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2e12ce3d0176cd87, processorArchitecture=MSIL">
+    <Reference Include="Ext.Net.Mobile, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Mobile\src\bin\Debug\Ext.Net.Mobile.dll</HintPath>
       <Private>True</Private>
     </Reference>
@@ -262,6 +263,7 @@
     <Content Include="resources\js\main.js" />
     <Content Include="resources\video\BigBuck.m4v" />
     <Content Include="StandaloneExamples\BingMap_Basic.aspx" />
+    <Content Include="StandaloneExamples\Map_Follow_Location.aspx" />
     <Content Include="StandaloneExamples\Map_Basic.aspx" />
     <Content Include="StandaloneExamples\DataView_Basic.aspx" />
     <Content Include="StandaloneExamples\DataView_Events.aspx" />
