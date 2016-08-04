@@ -62,9 +62,9 @@
                     Name="rank"
                     Label="Rank">
                     <Options>
-                        <ext:NetListItem Text="Master" Value="master" />
-                        <ext:NetListItem Text="Journeyman" Value="journeyman" />
-                        <ext:NetListItem Text="Apprentice" Value="apprentice" />
+                        <ext:ListItem Text="Master" Value="master" />
+                        <ext:ListItem Text="Journeyman" Value="journeyman" />
+                        <ext:ListItem Text="Apprentice" Value="apprentice" />
                     </Options>
                 </ext:SelectField>
                 <ext:Slider

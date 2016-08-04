@@ -21,8 +21,8 @@
                 <ext:ToolbarSpacer runat="server" />
                 <ext:SelectField runat="server" Name="options">
                     <Options>
-                        <ext:NetListItem Text="This is just a big select with super long option" Value="1" />
-                        <ext:NetListItem Text="Another select item" Value="2" />
+                        <ext:ListItem Text="This is just a big select with super long option" Value="1" />
+                        <ext:ListItem Text="Another select item" Value="2" />
                     </Options>
                 </ext:SelectField>
                 <ext:ToolbarSpacer runat="server" />
