@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" %>
 
 <script runat="server">
-    public object[] people_list
+    public object[] People
     {
         get
         {
@@ -9,7 +9,11 @@
 
             for (var x = 1; x < 50; x++)
             {
-                rv.Add(new { FirstName = "Firstname" + x, LastName = "Lastname" + x });
+                rv.Add(new
+                {
+                    FirstName = "Firstname" + x,
+                    LastName = "Lastname" + x
+                });
             }
 
             return rv.ToArray();
@@ -30,7 +34,7 @@
                 <Html>{FirstName} {LastName}</Html>
             </ItemTpl>
             <Store>
-                <ext:Store runat="server" Data="<%# people_list %>" ID="store1">
+                <ext:Store runat="server" DataSource="<%# this.People %>">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>

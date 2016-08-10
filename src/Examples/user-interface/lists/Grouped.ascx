@@ -1,15 +1,20 @@
 ﻿<%@ Control Language="C#" %>
 
 <script runat="server">
-    public object[] people_list
+    public object[] People
     {
         get
         {
             var rv = new List<object>();
 
-            for (var x = 1; x < 50; x++)
+            for (var x = 1; x < 200; x++)
             {
-                rv.Add(new { FirstChar = Convert.ToChar(x % 5 + 65), FirstName = Convert.ToChar(x % 5 + 65) + ".Firstname" + x, LastName = "Lastname" + x });
+                rv.Add(new
+                {
+                    FirstChar = Convert.ToChar(x % 26 + 65),
+                    FirstName = Convert.ToChar(x % 26 + 65) + ".Firstname" + x,
+                    LastName = "Lastname" + x
+                });
             }
 
             return rv.ToArray();
@@ -31,7 +36,7 @@
             </ItemTpl>
             <IndexBar runat="server" StyleSpec="font-size: 30px; background: rgba(30,30,30, 0.1)" />
             <Store>
-                <ext:Store runat="server" Data="<%# people_list %>" GroupField="FirstChar">
+                <ext:Store runat="server" DataSource="<%# this.People %>" GroupField="FirstChar">
                     <Model>
                         <ext:Model runat="server">
                             <Fields>
