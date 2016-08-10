@@ -7,7 +7,7 @@
     {
         if (RequestManager.IsAndroid)
         {
-            this.Panel1.Items.Add(new Ext.Net.Mobile.Button()
+            this.AudioPanel.Items.Add(new Ext.Net.Mobile.Button()
             {
                 Text = "Play audio",
                 Handler = @"var audio = this.up().down('audio');
@@ -20,7 +20,7 @@
                             };"
             });
 
-            this.Panel1.LayoutConfig.Add(new VBoxLayoutConfig()
+            this.AudioPanel.LayoutConfig.Add(new VBoxLayoutConfig()
             {
                 Pack = BoxPack.Center,
                 Align = BoxAlign.Center
@@ -28,13 +28,13 @@
         }
         else
         {
-            this.Panel1.Layout = "fit";
+            this.AudioPanel.Layout = "fit";
         }
     }
 </script>
 
 <ext:Panel
-    ID="Panel1"
+    ID="AudioPanel"
     runat="server"
     Cls="card">
     <Listeners>
