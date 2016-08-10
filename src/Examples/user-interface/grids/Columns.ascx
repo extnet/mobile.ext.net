@@ -37,7 +37,7 @@
     };
 </script>
 
-<ext:Grid runat="server" Layout="FitLayout">
+<ext:Grid runat="server">
     <Store>
         <ext:Store runat="server" DataSource="<%# Data %>" AutoDataBind="true">
             <Fields>
