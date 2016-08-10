@@ -47,7 +47,6 @@
     </Listeners>
     <Items>
         <ext:Audio
-            ID="Audio1"
             runat="server"
             Url="resources/audio/crash.mp3"
             Loop="true"
