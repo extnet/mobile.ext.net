@@ -9,16 +9,15 @@
         {
             this.Panel1.Items.Add(new Ext.Net.Mobile.Button()
             {
-                ID = "playbtn",
                 Text = "Play audio",
-                Handler = @"
-                    if (App.audio1.isPlaying()) {
-                        App.audio1.pause();
-                        this.setText('Play audio');
-                    } else {
-                        App.audio1.play();
-                        this.setText('Pause audio');
-                    };"
+                Handler = @"var audio = this.up().down('audio');
+                            if (audio.isPlaying()) {
+                                audio.pause();
+                                this.setText('Play audio');
+                            } else {
+                                audio.play();
+                                this.setText('Pause audio');
+                            };"
             });
 
             this.Panel1.LayoutConfig.Add(new VBoxLayoutConfig()
@@ -39,10 +38,19 @@
     runat="server"
     Cls="card">
     <Listeners>
-        <Hide Handler="this.down('audio').fireEvent('hide'); if (this.down('button')) this.down('button').setText('Play audio');" />
+        <Hide Handler="this.down('audio').fireEvent('hide'); 
+                       if (this.down('button')) { 
+                           this.down('button').setText('Play audio');
+                       }" />
+
         <Show Handler="this.down('audio').fireEvent('show');" />
     </Listeners>
     <Items>
-        <ext:Audio runat="server" ID="audio1" Url="resources/audio/crash.mp3" Loop="true" Cls="myAudio" />
+        <ext:Audio
+            ID="Audio1"
+            runat="server"
+            Url="resources/audio/crash.mp3"
+            Loop="true"
+            Cls="myAudio" />
     </Items>
 </ext:Panel>
