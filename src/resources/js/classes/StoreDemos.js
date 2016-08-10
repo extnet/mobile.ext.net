@@ -238,6 +238,16 @@ Ext.define('KitchenSink.store.Demos', {
                     leaf: true,
                     id: 'overlays'
                 }, {
+                    text: 'Map',
+                    leaf: true,
+                    view: 'user-interface.Map',
+                    id: 'map'
+                }, {
+                    text: 'BingMap',
+                    leaf: true,
+                    view: 'user-interface.BingMap',
+                    id: 'bingmap'
+                }, {
                     text: 'Menus',
                     view: 'user-interface.Menus',
                     leaf: true,

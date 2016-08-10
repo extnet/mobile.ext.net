@@ -215,6 +215,8 @@
     <Content Include="Examples\touchevents\TouchEvents.ascx" />
     <Content Include="Examples\user-interface\Bottomtabs.ascx" />
     <Content Include="Examples\user-interface\Buttons.ascx" />
+    <Content Include="Examples\user-interface\BingMap.ascx" />
+    <Content Include="Examples\user-interface\Map.ascx" />
     <Content Include="Examples\user-interface\Carousel.ascx" />
     <Content Include="Examples\user-interface\dataviews\Basic.ascx" />
     <Content Include="Examples\user-interface\dataviews\Horizontal.ascx" />
@@ -263,6 +265,7 @@
     <Content Include="resources\js\main.js" />
     <Content Include="resources\video\BigBuck.m4v" />
     <Content Include="StandaloneExamples\BingMap_Basic.aspx" />
+    <Content Include="StandaloneExamples\Map_Initial_GPS_Location.aspx" />
     <Content Include="StandaloneExamples\Map_Follow_Location.aspx" />
     <Content Include="StandaloneExamples\Map_Basic.aspx" />
     <Content Include="StandaloneExamples\DataView_Basic.aspx" />

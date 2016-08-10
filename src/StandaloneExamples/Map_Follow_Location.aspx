@@ -5,6 +5,16 @@
 <%--
  Example based on this discussion at Sencha Forums:
  https://www.sencha.com/forum/showthread.php?178912
+
+ Google maps API now requires, besides the API Key, that clients able to fetch
+ geopositions (geo.getLatitude() for example) are accessing thru a secure https
+ connection.
+
+ With google chrome, this can be overridden by either running on localhost or
+ setting chrome's --unsafely-treat-insecure-origin-as-secure="http://example.com".
+
+ Read more about this limitation on:
+ https://sites.google.com/a/chromium.org/dev/Home/chromium-security/deprecating-powerful-features-on-insecure-origins
 --%>
 
 <script runat="server">
@@ -13,12 +23,7 @@
         // We do not map the whole google maps API to Ext.NET so this is one
         // way to reference a variable from code behind.
         mapTypeId = new JRawValue("google.maps.MapTypeId.HYBRID"),
-        zoom = 16,
-        center = new
-        {
-            lat = 53.5460731,
-            lng = -113.4991877
-        }
+        zoom = 16
     };
 </script>
 
@@ -28,8 +33,10 @@
 
     <script type="text/javascript">
         var geolocationUpdateHandler = function (geo) {
-            var center = new google.maps.LatLng(geo.latitude, geo.longitude),
+            var center = new google.maps.LatLng(geo.getLatitude(), geo.getLongitude()),
                 map = geo.map;
+
+            console.log('update location!');
 
             if (map.rendered) {
                 map.update(center)
@@ -44,6 +51,9 @@
             bPermissionDenied,
             bLocationUnavailable,
             message) {
+
+            console.log('location error event catched.');
+
             if (bLocationUnavailable) {
                 Ext.Msg.alert(
                     'Location Error',
@@ -63,7 +73,12 @@
     <ext:ResourceManager runat="server" ScriptMode="Debug" SourceFormatting="true" />
 
     <%-- The following maps API key is only supposed to work from Ext.NET sites (*.ext.net domains). --%>
-    <ext:Map runat="server" FullScreen="true" AllowNoAPIKey="true" MapOptions="<%# MyMapOptions %>">
+    <ext:Map
+        ID="map1"
+        runat="server"
+        FullScreen="true"
+        APIKey="AIzaSyBB1LuWnmdq6JaM425i9N7NahAXxBAdG_c"
+        MapOptions="<%# MyMapOptions %>">
         <Geo runat="server" AutoUpdate="true" MaximumAge="0" Timeout="2000">
             <Listeners>
                 <LocationError Fn="geolocationErrorHandler" />
