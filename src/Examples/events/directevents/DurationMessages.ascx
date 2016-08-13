@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:Container runat="server" Layout="VBoxLayout">
+<ext:Container runat="server" Layout="VBoxLayout" Padding="10">
     <Defaults>
         <ext:Parameter Name="margin" Value="0 0 7 0" Mode="Value"></ext:Parameter>
     </Defaults>
