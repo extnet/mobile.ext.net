@@ -2,14 +2,15 @@
 
 <ext:Container runat="server" Layout="FitLayout">
     <Items>
-        <ext:Panel runat="server" ID="IntroPanel">
+        <ext:Panel ID="IntroPanel" runat="server" Padding="10">
             <Items>
                 <ext:Button
                     runat="server"
                     Text="Console"
                     UI="Confirm"
-                    Margin="10"
+                    MarginSpec="0 0 10 0"
                     Handler="showTouchPanel();" />
+
                 <ext:Component runat="server">
                     <Content>
                         <p>
@@ -36,7 +37,7 @@
                 </ext:Component>
             </Items>
             <HtmlBin>
-                <script type="text/javascript">
+                <script>
                     var showTouchPanel = function () {
                         App.IntroPanel.hide();
                         App.TouchPanel.show();
@@ -44,12 +45,16 @@
                 </script>
             </HtmlBin>
         </ext:Panel>
-        <ext:Container runat="server" ID="TouchPanel" Hidden="true">
+        <ext:Container ID="TouchPanel" runat="server" Hidden="true">
             <LayoutConfig>
                 <ext:VBoxLayoutConfig Pack="Center" Align="Stretch" />
             </LayoutConfig>
             <Items>
-                <ext:Container runat="server" ID="touchpad" Flex="1" Margin="10">
+                <ext:Container
+                    ID="touchpad"
+                    runat="server"
+                    Flex="1"
+                    Margin="10">
                     <LayoutConfig>
                         <ext:VBoxLayoutConfig Pack="Center" Align="Stretch" />
                     </LayoutConfig>
@@ -60,7 +65,7 @@
                         </ext:Container>
                     </Items>
                     <HtmlBin>
-                        <script type="text/javascript">
+                        <script>
                             var initTouchEvents = function () {
                                 var onTouchPadEvent = function (e, target, options) {
                                     var scroller = App.logger.getScrollable();
@@ -94,8 +99,18 @@
                 </ext:Container>
                 <ext:Container runat="server" Layout="FitLayout" Flex="1">
                     <Items>
-                        <ext:Toolbar runat="server" UIName="light" Docked="Top" Title="Event Log" />
-                        <ext:Container runat="server" ID="logger" Scrollable="Both" StyleHtmlContent="true">
+                        <ext:Toolbar
+                            runat="server"
+                            UIName="light"
+                            Docked="Top"
+                            Title="Event Log" />
+
+                        <ext:Container
+                            ID="logger"
+                            runat="server"
+                            Scrollable="Both"
+                            StyleHtmlContent="true"
+                            Padding="10">
                             <Content>
                                 <span>Try using gestures on the indicated area to see how events are fired.</span>
                             </Content>
