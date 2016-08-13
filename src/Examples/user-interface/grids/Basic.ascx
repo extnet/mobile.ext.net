@@ -44,8 +44,8 @@
         </ext:Store>
     </Store>
     <Columns>
-        <ext:Column runat="server" Text="Name" DataIndex="name" Width="200" />
-        <ext:Column runat="server" Text="Email" DataIndex="email" Width="250" />
+        <ext:Column runat="server" Text="Name" DataIndex="name" Width="100" />
+        <ext:Column runat="server" Text="Email" DataIndex="email" Width="210" />
         <ext:Column runat="server" Text="Phone" DataIndex="phone" Width="150" />
     </Columns>
 </ext:Grid>
