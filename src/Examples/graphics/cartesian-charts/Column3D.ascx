@@ -68,9 +68,6 @@
                         <ext:ModelField Name="g1" />
                         <ext:ModelField Name="g2" />
                         <ext:ModelField Name="g3" />
-                        <ext:ModelField Name="g4" />
-                        <ext:ModelField Name="g5" />
-                        <ext:ModelField Name="g6" />
                         <ext:ModelField Name="name" />
                     </Fields>
                     <ServerProxy>
