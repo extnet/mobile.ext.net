@@ -46,6 +46,30 @@
                 text-decoration: none;
             }
     </style>
+
+    <script>
+        Ext.dataview.NestedList.override({
+            doBack: function (me, node, lastActiveList, detailCardActive) {
+                var layout = me.getLayout(),
+                    animation = layout ? layout.getAnimation() : null;
+
+                if (detailCardActive && lastActiveList) {
+                    if (animation) {
+                        animation.setReverse(true);
+                    }
+
+                    me.goToNode(node.parentNode); // This replaces the commented out code below
+                    
+                    // This doesn't work as expected causing wrong navigation. ExtJS issue.
+                    // me.setActiveItem(lastActiveList);
+                    // me.setLastNode(node.parentNode);
+                    // me.syncToolbar();
+                } else {
+                    me.goToNode(node.parentNode);
+                }
+            }
+        });
+    </script>
 </head>
 <body>
     <ext:ResourceManager runat="server" />
