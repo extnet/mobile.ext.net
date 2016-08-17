@@ -59,8 +59,9 @@
                     }
 
                     me.goToNode(node.parentNode); // This replaces the commented out code below
-                    
-                    // This doesn't work as expected causing wrong navigation. ExtJS issue.
+
+                    // This doesn't work as expected causing wrong navigation
+                    // if a sample is opened via a direct link
                     // me.setActiveItem(lastActiveList);
                     // me.setLastNode(node.parentNode);
                     // me.syncToolbar();
