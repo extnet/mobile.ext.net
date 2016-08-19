@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" %>
 
-<ext:Container runat="server" FullScreen="true" StyleSpec="border: 1px solid red">
+<ext:Container runat="server" FullScreen="true">
     <Content>
         <style type="text/css">
             .x-innerhtml { height: 100% }
