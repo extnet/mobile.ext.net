@@ -265,6 +265,7 @@
     <Content Include="resources\js\main.js" />
     <Content Include="resources\video\BigBuck.m4v" />
     <Content Include="StandaloneExamples\BingMap_Basic.aspx" />
+    <Content Include="StandaloneExamples\Map_Locations.aspx" />
     <Content Include="StandaloneExamples\Map_Initial_GPS_Location.aspx" />
     <Content Include="StandaloneExamples\Map_Follow_Location.aspx" />
     <Content Include="StandaloneExamples\Map_Basic.aspx" />
