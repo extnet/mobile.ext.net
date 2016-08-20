@@ -251,7 +251,12 @@ Ext.define('KitchenSink.store.Demos', {
                     text: 'BingMap',
                     leaf: true,
                     view: 'user-interface.BingMap',
-                    id: 'bingmap'
+                    id: 'bingmap',
+                    otherContent: [{
+                        type: 'BingMap_Basic.aspx',
+                        path: 'StandaloneExamples/BingMap_Basic.aspx',
+                        serverSideContent: true
+                    }]
                 }, {
                     text: 'Menus',
                     view: 'user-interface.Menus',
