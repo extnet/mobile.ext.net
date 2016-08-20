@@ -293,6 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\GetFeeds.cs" />
+    <Compile Include="Class\GetFileContents.cs" />
     <Compile Include="Class\KitchenSink\GetPeople.cs" />
     <Compile Include="Data\DurationMessages.ashx.cs">
       <DependentUpon>DurationMessages.ashx</DependentUpon>

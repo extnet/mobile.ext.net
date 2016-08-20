@@ -21,6 +21,12 @@
 
         return ComponentLoader.ToConfig(path);
     }
+
+    [DirectMethod]
+    public string GetServerSideFileContents(string file)
+    {
+        return Ext.Net.Examples.Mobile.Class.GetFileContents.JsAndHTMLFriendly(file);
+    }
 </script>
 
 <!DOCTYPE html>

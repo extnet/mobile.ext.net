@@ -244,7 +244,8 @@ Ext.define('KitchenSink.store.Demos', {
                     id: 'map',
                     otherContent: [{
                         type: 'Map_Locations.aspx',
-                        path: 'StandaloneExamples/Map_Locations.aspx'
+                        path: 'StandaloneExamples/Map_Locations.aspx',
+                        serverSideContent: true
                     }]
                 }, {
                     text: 'BingMap',

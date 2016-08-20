@@ -156,16 +156,34 @@ Ext.define('KitchenSink.controller.Main', {
     },
 
     getFileContent: function (options) {
-        return Ext.Ajax.request({
-            url: options.path
-        }).then(function (response) {
-            return {
-                type: options.type,
-                html: response.responseText
-            };
-        }, function () {
-            return null;
-        });
+        if (options.serverSideContent && App.direct.GetServerSideFileContents) {
+            return App.direct.GetServerSideFileContents(options.path).then(
+                function (response) {
+                    var retObj = {};
+
+                    eval("retObj = " + response.responseText);
+
+                    return {
+                        type: options.type,
+                        html: (retObj && retObj.result !== "undefined") ? retObj.result : null
+                    };
+                }, function () {
+                    return null;
+                }
+            );
+        } else {
+            return Ext.Ajax.request({
+                url: options.path
+                }).then(function (response) {
+                    return {
+                        type: options.type,
+                        html: response.responseText
+                    };
+                }, function () {
+                    return null;
+                }
+            );
+        }
     },
 
     onThemeToggleTap: function () {
