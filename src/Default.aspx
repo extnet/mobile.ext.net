@@ -37,7 +37,7 @@
 
     <link rel="stylesheet" type="text/css" href="/resources/css/KitchenSink-all.css" />
 
-    <script src="resources/js/classes/StoreDemos.js?v=7"></script>
+    <script src="resources/js/classes/StoreDemos.js?v=8"></script>
     <script src="resources/js/classes/SourceOverlay.js?v=3"></script>
 
     <script src="resources/js/main.js?v=1"></script>
