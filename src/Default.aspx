@@ -75,6 +75,7 @@
         ID="LinksMenu"
         runat="server"
         Side="Right"
+        Scrollable="Vertical"
         Cls="sidebar-menu"
         WidthSpec="75%">
         <Items>
