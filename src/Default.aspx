@@ -106,6 +106,7 @@
         <Toolbar
             ID="MainNavigationBar"
             runat="server"
+            Cls="main-navigation-bar"
             Docked="Top">
             <Items>
                 <ext:Button

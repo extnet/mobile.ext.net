@@ -1,19 +1,47 @@
-﻿/*  Sidebar Menu */
+﻿/* Main Navigation Bar */
+
+.main-navigation-bar {
+    border-color: #000;
+    background-color: #000;
+}
+
+    .main-navigation-bar.x-toolbar .x-title {
+        color: #fff;
+    }
+
+    .main-navigation-bar .x-button {
+        border-color: #444;
+        background-color: #000;
+        color: #fff;
+    }
+
+        .main-navigation-bar .x-button:active,
+        .main-navigation-bar .x-button:focus {
+            border-color: #fff;
+        }
+
+        .main-navigation-bar .x-button .x-button-icon {
+            color: #fff;
+        }
+
+
+/*  Sidebar Menu */
 
 .sidebar-menu {
-    background-color: #222;
+    background-color: #000;
 }
 
     .sidebar-menu.x-right {
-        padding: 25px 0 0;
+        padding: 25px 0;
         border-left: none;
+        overflow: auto;
     }
 
     .sidebar-menu .separator {
         height: 1px;
         margin: 12px 0;
         overflow: hidden;
-        background: #444;
+        background: #333;
     }
 
     .sidebar-menu .x-button {
