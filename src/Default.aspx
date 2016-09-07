@@ -35,13 +35,13 @@
 <head runat="server">
     <title>Ext.NET Mobile Examples</title>
 
-    <link rel="stylesheet" type="text/css" href="/resources/css/KitchenSink-all.css" />
-    <link rel="stylesheet" type="text/css" href="/resources/css/main.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/KitchenSink-all.css?v=4.1.0.0" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css?v=4.1.0.0" />
 
-    <script src="resources/js/classes/StoreDemos.js?v=8"></script>
-    <script src="resources/js/classes/SourceOverlay.js?v=3"></script>
+    <script src="resources/js/classes/StoreDemos.js?v=4.1.0.8"></script>
+    <script src="resources/js/classes/SourceOverlay.js?v=4.1.0.3"></script>
 
-    <script src="resources/js/main.js?v=1"></script>
+    <script src="resources/js/main.js?v=4.1.0.0"></script>
 
     <script>
         Ext.dataview.NestedList.override({
