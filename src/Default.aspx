@@ -36,22 +36,12 @@
     <title>Ext.NET Mobile Examples</title>
 
     <link rel="stylesheet" type="text/css" href="/resources/css/KitchenSink-all.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css?v=1" />
 
     <script src="resources/js/classes/StoreDemos.js?v=8"></script>
     <script src="resources/js/classes/SourceOverlay.js?v=3"></script>
 
     <script src="resources/js/main.js?v=1"></script>
-
-    <style>
-        .links-menu {
-            background-color: #2a333c;
-        }
-
-            .links-menu a {
-                color: #b0bcc7;
-                text-decoration: none;
-            }
-    </style>
 
     <script>
         Ext.dataview.NestedList.override({
@@ -85,12 +75,24 @@
         ID="LinksMenu"
         runat="server"
         Side="Right"
-        Cls="links-menu"
-        WidthSpec="40%">
+        Cls="sidebar-menu"
+        WidthSpec="75%">
         <Items>
+            <ext:Component runat="server" Html="<a href='http://mobile.ext.net/'>Mobile Examples</a>" />
+            <ext:Component runat="server" Html="<a href='http://mvc.mobile.ext.net/'>MVC Mobile Examples</a>" />
+            <ext:Component runat="server" Html="<div class='separator'></div>" />
+            <ext:Component runat="server" Html="<a href='http://docs.sencha.com/extjs/6.0/6.0.0-classic/'>EXT JS Documentation</a>" />
+            <ext:Component runat="server" Html="<a href='http://docs.ext.net/'>Ext.NET Documentation</a>" />
+            <ext:Component runat="server" Html="<div class='separator'></div>" />
+            <ext:Component runat="server" Html="<a href='http://forums.ext.net/'>Community Forums</a>" />
+            <ext:Component runat="server" Html="<a href='http://ext.net/faq/'>FAQ</a>" />
+            <ext:Component runat="server" Html="<a href='http://ext.net/contact/'>Contact</a>" />
             <ext:Component runat="server" Html="<a href='http://ext.net'>Ext.NET Home</a>" />
-            <ext:Component runat="server" Html="<a href='http://forums.ext.net'>Forums</a>" />
-            <ext:Component runat="server" Html="<a href='http://ext.net/download'>Download</a>" />
+            <ext:Button runat="server" Text="Get Ext.NET" UI="Action">
+                <Listeners>
+                    <Tap Handler="window.location='http://ext.net/store';" />
+                </Listeners>
+            </ext:Button>
         </Items>
     </ext:Menu>
 

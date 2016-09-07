@@ -1,0 +1,39 @@
+﻿/*  Sidebar Menu */
+
+.sidebar-menu {
+    background-color: #222;
+}
+
+    .sidebar-menu.x-right {
+        padding: 25px 0 0;
+        border-left: none;
+    }
+
+    .sidebar-menu .separator {
+        height: 1px;
+        margin: 12px 0;
+        overflow: hidden;
+        background: #444;
+    }
+
+    .sidebar-menu .x-button {
+        margin: 30px 25px;
+    }
+
+    .sidebar-menu a {
+        display: block;
+        padding: 10px 25px;
+        color: #bbb;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+        .sidebar-menu a:focus,
+        .sidebar-menu a:active {
+            background-color: #2e2e2e;
+            color: #fff;
+        }
+
+        .sidebar-menu a i {
+            margin-right: 7px;
+        }
