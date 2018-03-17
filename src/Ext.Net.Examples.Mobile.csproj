@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +58,9 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ext.Net.Mobile, Version=4.1.0.0, Culture=neutral, PublicKeyToken=1ac231f0ab990856, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ext.NET.Mobile.4.1.1\lib\net45\Ext.Net.Mobile.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -90,10 +94,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Release|AnyCPU') Or ('$(Configuration)|$(Platform)' == 'Debug|AnyCPU')">
-    <Reference Include="Ext.Net.Mobile, Version=4.1.0.0, Culture=neutral, PublicKeyToken=1ac231f0ab990856, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ext.NET.Mobile.4.1.0\lib\net45\Ext.Net.Mobile.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
       <HintPath>..\packages\Ext.NET.Utilities.2.5.0\lib\Ext.Net.Utilities.dll</HintPath>
       <Private>True</Private>
@@ -124,11 +124,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup Condition=" ('$(Configuration)|$(Platform)' == 'Development|AnyCPU') ">
-    <Reference Include="Ext.Net.Mobile, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Mobile\src\bin\Debug\Ext.Net.Mobile.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Ext.Net.Utilities, Version=2.5.0.0, Culture=neutral, PublicKeyToken=2c34ac34702a3c23, processorArchitecture=MSIL">
       <HintPath>..\..\Mobile\src\bin\Debug\Ext.Net.Utilities.dll</HintPath>
       <Private>True</Private>
@@ -245,6 +240,7 @@
     <Content Include="Examples\user-interface\Tabs.ascx" />
     <Content Include="Examples\user-interface\Toolbars.ascx" />
     <Content Include="Examples\user-interface\TreeList.ascx" />
+    <Content Include="Ext.NET.Mobile.Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="resources\audio\crash.mp3" />
@@ -340,6 +336,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Company.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Ext.NET.Mobile\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Ext.NET.Mobile\LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Ext.NET.Mobile\CHANGELOG.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
