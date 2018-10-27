@@ -21,8 +21,8 @@
             <ext:Container runat="server">
                 <Content>
                     <header>
-                        <a href="http://ext.net/">
-                            <img src="http://speed.ext.net/identity/extnet-logo-small.png" />
+                        <a href="https://ext.net/">
+                            <img src="https://speed.ext.net/identity/extnet-logo-small.png" />
                         </a>
                     </header>
 
@@ -41,7 +41,8 @@
                 LabelWidth="80"
                 PlaceHolder=">> Enter a Test Message Here <<"
                 Height="85"
-                MarginSpec="10 0 5 0" />
+                MarginSpec="10 0 5 0" 
+                />
 
             <ext:Button
                 ID="Button1"

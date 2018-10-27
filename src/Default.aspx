@@ -79,19 +79,19 @@
         Cls="sidebar-menu"
         WidthSpec="75%">
         <Items>
-            <ext:Component runat="server" Html="<a href='http://mobile.ext.net/'>Mobile Examples</a>" />
-            <ext:Component runat="server" Html="<a href='http://mvc.mobile.ext.net/'>MVC Mobile Examples</a>" />
+            <ext:Component runat="server" Html="<a href='https://mobile.ext.net/'>Mobile Examples</a>" />
+            <ext:Component runat="server" Html="<a href='https://mvc.mobile.ext.net/'>MVC Mobile Examples</a>" />
             <ext:Component runat="server" Html="<div class='separator'></div>" />
-            <ext:Component runat="server" Html="<a href='http://docs.sencha.com/extjs/6.0/6.0.0-classic/'>EXT JS Documentation</a>" />
-            <ext:Component runat="server" Html="<a href='http://docs.ext.net/'>Ext.NET Documentation</a>" />
+            <ext:Component runat="server" Html="<a href='https://docs.sencha.com/extjs/6.6.0'>EXT JS Documentation</a>" />
+            <ext:Component runat="server" Html="<a href='https://docs.ext.net/'>Ext.NET Documentation</a>" />
             <ext:Component runat="server" Html="<div class='separator'></div>" />
-            <ext:Component runat="server" Html="<a href='http://forums.ext.net/'>Community Forums</a>" />
-            <ext:Component runat="server" Html="<a href='http://ext.net/faq/'>FAQ</a>" />
-            <ext:Component runat="server" Html="<a href='http://ext.net/contact/'>Contact</a>" />
-            <ext:Component runat="server" Html="<a href='http://ext.net'>Ext.NET Home</a>" />
+            <ext:Component runat="server" Html="<a href='https://forums.ext.net/'>Community Forums</a>" />
+            <ext:Component runat="server" Html="<a href='https://ext.net/faq/'>FAQ</a>" />
+            <ext:Component runat="server" Html="<a href='https://ext.net/contact/'>Contact</a>" />
+            <ext:Component runat="server" Html="<a href='https://ext.net'>Ext.NET Home</a>" />
             <ext:Button runat="server" Text="Get Ext.NET" UI="Action">
                 <Listeners>
-                    <Tap Handler="window.location='http://ext.net/store';" />
+                    <Tap Handler="window.location='https://ext.net/store';" />
                 </Listeners>
             </ext:Button>
         </Items>
@@ -116,14 +116,16 @@
                     Hidden="true"
                     Align="Right"
                     UI="Action"
-                    Text="Source" />
+                    Text="Source" 
+                    />
 
                 <ext:Button
                     ID="MenuButton"
                     runat="server"
                     Align="Right"
                     IconCls="x-fa fa-navicon"
-                    MarginSpec="0 0 0 5" />
+                    MarginSpec="0 0 0 5" 
+                    />
             </Items>
         </Toolbar>
     </ext:NestedList>

@@ -35,7 +35,7 @@
                     runat="server"
                     Name="url"
                     Label="Url"
-                    PlaceHolder="http://ext.net/"
+                    PlaceHolder="https://ext.net/"
                     ClearIcon="true" />
                 <ext:SpinnerField
                     runat="server"
