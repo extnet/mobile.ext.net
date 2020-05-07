@@ -10,7 +10,7 @@
             <Items>
                 <ext:Button runat="server" Text="Run" Width="75">
                     <DirectEvents>
-                        <Tap Url="Data/DurationMessages.ashx" Complete="Ext.Msg.alert('Done', 'The operation has been completed.');">
+                        <Tap Url="~/Data/DurationMessages.ashx" Complete="Ext.Msg.alert('Done', 'The operation has been completed.');">
                             <EventMask>
                                 <DurationMessages>
                                     <ext:DurationMessage Duration="1000" Message="Hm... taking a bit longer than expected..." />
@@ -28,7 +28,7 @@
             <Items>
                 <ext:Button runat="server" Text="Run" Width="75">
                     <DirectEvents>
-                        <Tap Url="Data/DurationMessages.ashx" Complete="Ext.Msg.alert('Done', 'The operation has been completed.');">
+                        <Tap Url="~/Data/DurationMessages.ashx" Complete="Ext.Msg.alert('Done', 'The operation has been completed.');">
                             <EventMask ShowMask="true" ShowDurationMessages="false" />
                         </Tap>
                     </DirectEvents>
