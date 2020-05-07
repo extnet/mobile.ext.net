@@ -41,20 +41,20 @@
                 <ext:Button runat="server" Text="Run" Width="75">
                     <Listeners>
                         <Tap Handler="Ext.net.DirectMethod.request({
-                                            url: 'Data/DurationMessages.ashx',
-                                            eventMask: {
-                                                durationMessages: [{
-                                                    duration: 1000,
-                                                    message: 'DirectMethod duration message for 1000 milliseconds'
-                                                }, {
-                                                    duration: 3000,
-                                                    message: 'DirectMethod duration message for 3000 milliseconds'
-                                                }]
-                                            },
-                                            complete: function() {
-                                                Ext.Msg.alert('Done', 'The operation has been completed.');
-                                            }
-                                        });" />
+                            url: 'Data/DurationMessages.ashx',
+                            eventMask: {
+                                durationMessages: [{
+                                    duration: 1000,
+                                    message: 'DirectMethod duration message for 1000 milliseconds'
+                                }, {
+                                    duration: 3000,
+                                    message: 'DirectMethod duration message for 3000 milliseconds'
+                                }]
+                            },
+                            complete: function() {
+                                Ext.Msg.alert('Done', 'The operation has been completed.');
+                            }
+                        });" />
                     </Listeners>
                 </ext:Button>
                 <ext:Component runat="server" Html="&nbsp;- DirectMethod" />
